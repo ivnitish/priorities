@@ -1,8 +1,8 @@
 # My Priority List
-_Last updated: 2026-04-10_
+_Last updated: 2026-04-11_
 
-## P0 — Do now
-- [x] JBL repair pickup - tomorrow (Apr 12)
+## P0 - Do now
+- [ ] JBL repair pickup - tomorrow (Apr 12)
 - [ ] File mom's PRAN report - tomorrow (Apr 12)
 - [ ] Vissu's baby birthday gift - by Sunday
 - [ ] Abhishek's daughter birthday gift - by Sunday
@@ -11,13 +11,14 @@ _Last updated: 2026-04-10_
 - [ ] Zanskar - book tickets & plan (departing late April!)
 - [ ] Gynecologist appointment
 - [ ] Fix Vyshnavi smallcase + PAN mismatch
-- [ ] Sign Vyshnavi up on Rovia
+- [x] Sign Vyshnavi up on Rovia
 - [ ] Vyshnavi PF - invest in Ethos Life
 - [ ] Shopping batch (Amazon: pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush; Fab India wedding shopping; JBL speaker)
 - [ ] Solve sleep through daily activity
 - [ ] Study Munger mental models (start with 6 core ones)
+- [ ] Cricket in the morning - Apr 11
 
-## P1 — This week
+## P1 - This week
 - [ ] Dermatologist appointment
 - [ ] Decide & book blood tests - yourself
 - [ ] Decide & book blood tests - parents
@@ -27,7 +28,7 @@ _Last updated: 2026-04-10_
 - [ ] Dental + ENT appointment
 - [ ] Chiropractor
 
-## P2 — Soon
+## P2 - Soon
 - [ ] EPF / cost-free loan research
 - [ ] Parents body checkup
 - [ ] Change bedsheet
@@ -45,4 +46,3 @@ _Last updated: 2026-04-10_
 - [ ] Huberman routine
 - [ ] Weight tracker
 - [ ] Karaoke - Nannu Dhichukundhuvate
-
