@@ -15,6 +15,7 @@ _Last updated: 2026-04-10_
 - [ ] Vyshnavi PF - invest in Ethos Life
 - [ ] Shopping batch (Amazon: pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush; Fab India wedding shopping; JBL speaker)
 - [ ] Solve sleep through daily activity
+- [ ] Study Munger mental models (start with 6 core ones)
 
 ## P1 — This week
 - [ ] Dermatologist appointment
@@ -37,7 +38,8 @@ _Last updated: 2026-04-10_
 - [ ] Give massage gun
 - [ ] Plumbing repair - kitchen sink
 
-## P3 — Someday
+## P3 - Someday
+- [ ] Set up Claude Code automation hooks (weekly nudge, monthly reflection)
 - [ ] Trust for tax saving - research
 - [ ] US visa - plan
 - [ ] Huberman routine
