@@ -11,7 +11,7 @@ _Last updated: 2026-04-10_
 - [ ] Zanskar - book tickets & plan (departing late April!)
 - [ ] Gynecologist appointment
 - [ ] Fix Vyshnavi smallcase + PAN mismatch
-- [ ] Sign Vyshnavi up on Rovia
+- [x] Sign Vyshnavi up on Rovia
 - [ ] Vyshnavi PF - invest in Ethos Life
 - [ ] Shopping batch (Amazon: pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush; Fab India wedding shopping; JBL speaker)
 - [ ] Solve sleep through daily activity
