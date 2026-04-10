@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Priorities</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
+      padding-bottom: 80px;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 { font-size: 18px; font-weight: 700; }
+    header span { font-size: 12px; color: #888; }
+
+    #status {
+      font-size: 12px;
+      color: #888;
+      padding: 8px 20px;
+      background: #fff;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    #setup-banner {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 8px;
+      margin: 16px;
+      padding: 16px;
+      display: none;
+    }
+
+    #setup-banner h3 { font-size: 14px; margin-bottom: 8px; }
+    #setup-banner p { font-size: 13px; color: #555; margin-bottom: 12px; line-height: 1.5; }
+
+    #setup-banner input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    #setup-banner button {
+      width: 100%;
+      padding: 10px;
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .section {
+      margin: 16px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .section-header {
+      padding: 12px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .p0 .section-header { background: #fff0f0; color: #c0392b; }
+    .p1 .section-header { background: #fff8f0; color: #e67e22; }
+    .p2 .section-header { background: #f0f8ff; color: #2980b9; }
+    .p3 .section-header { background: #f5f5f5; color: #7f8c8d; }
+
+    .task-item {
+      display: flex;
+      align-items: flex-start;
+      padding: 14px 16px;
+      border-bottom: 1px solid #f5f5f5;
+      cursor: pointer;
+      gap: 12px;
+      transition: background 0.1s;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .task-item:last-child { border-bottom: none; }
+    .task-item:active { background: #f5f5f5; }
+
+    .task-item.done { opacity: 0.45; }
+    .task-item.done .task-text { text-decoration: line-through; }
+
+    .checkbox {
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+      transition: all 0.15s;
+    }
+
+    .task-item.done .checkbox {
+      background: #4caf50;
+      border-color: #4caf50;
+    }
+
+    .checkbox::after {
+      content: '';
+      width: 6px;
+      height: 10px;
+      border: 2px solid white;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg) translateY(-1px);
+      opacity: 0;
+    }
+
+    .task-item.done .checkbox::after { opacity: 1; }
+
+    .task-text {
+      font-size: 15px;
+      line-height: 1.4;
+      color: #1a1a1a;
+    }
+
+    .empty-section {
+      padding: 16px;
+      font-size: 14px;
+      color: #aaa;
+      text-align: center;
+    }
+
+    #refresh-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    #loading {
+      text-align: center;
+      padding: 40px 20px;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Priorities</h1>
+  <span id="last-updated"></span>
+</header>
+<div id="status">Loading...</div>
+
+<div id="setup-banner">
+  <h3>One-time setup</h3>
+  <p>Enter a GitHub Personal Access Token with <strong>repo</strong> scope to enable saving checkboxes back to GitHub.<br><br>
+  Get one at: github.com → Settings → Developer settings → Personal access tokens → Tokens (classic)</p>
+  <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxx">
+  <button onclick="saveToken()">Save token</button>
+</div>
+
+<div id="content">
+  <div id="loading">Loading your priorities...</div>
+</div>
+
+<button id="refresh-btn" onclick="loadList()">Refresh</button>
+
+<script>
+  const OWNER = 'ivnitish';
+  const REPO = 'priorities';
+  const FILE = 'active.md';
+  const API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE}`;
+
+  let currentSha = null;
+  let tasks = { P0: [], P1: [], P2: [], P3: [] };
+  let doneTasks = new Set(JSON.parse(localStorage.getItem('doneTasks') || '[]'));
+
+  function getToken() {
+    return localStorage.getItem('gh_token');
+  }
+
+  function saveToken() {
+    const t = document.getElementById('token-input').value.trim();
+    if (!t) return;
+    localStorage.setItem('gh_token', t);
+    document.getElementById('setup-banner').style.display = 'none';
+    loadList();
+  }
+
+  async function loadList() {
+    document.getElementById('status').textContent = 'Syncing...';
+    try {
+      const headers = { 'Accept': 'application/vnd.github.v3+json' };
+      const token = getToken();
+      if (token) headers['Authorization'] = `token ${token}`;
+
+      const res = await fetch(API, { headers });
+      if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
+      const data = await res.json();
+      currentSha = data.sha;
+      const content = atob(data.content.replace(/\n/g, ''));
+      parseMarkdown(content);
+      render();
+      document.getElementById('status').textContent = 'Synced with GitHub';
+      const match = content.match(/_Last updated: (.+)_/);
+      if (match) document.getElementById('last-updated').textContent = match[1];
+    } catch (e) {
+      document.getElementById('status').textContent = 'Could not load — showing cached';
+      renderFromCache();
+    }
+  }
+
+  function parseMarkdown(md) {
+    tasks = { P0: [], P1: [], P2: [], P3: [] };
+    let currentSection = null;
+    for (const line of md.split('\n')) {
+      if (line.includes('P0')) currentSection = 'P0';
+      else if (line.includes('P1')) currentSection = 'P1';
+      else if (line.includes('P2')) currentSection = 'P2';
+      else if (line.includes('P3')) currentSection = 'P3';
+      else if (line.startsWith('- [') && currentSection) {
+        const checked = line.startsWith('- [x]');
+        const text = line.replace(/^- \[.\] /, '').trim();
+        if (text) tasks[currentSection].push({ text, checked });
+      }
+    }
+    localStorage.setItem('cachedTasks', JSON.stringify(tasks));
+  }
+
+  function renderFromCache() {
+    const cached = localStorage.getItem('cachedTasks');
+    if (cached) { tasks = JSON.parse(cached); render(); }
+  }
+
+  function render() {
+    const labels = {
+      P0: 'P0 — Do now',
+      P1: 'P1 — This week',
+      P2: 'P2 — Soon',
+      P3: 'P3 — Someday'
+    };
+
+    let html = '';
+    for (const [key, label] of Object.entries(labels)) {
+      const items = tasks[key] || [];
+      html += `<div class="section ${key.toLowerCase()}">
+        <div class="section-header">${label}</div>`;
+      if (items.length === 0) {
+        html += `<div class="empty-section">All clear</div>`;
+      } else {
+        items.forEach((task, i) => {
+          const id = `${key}-${i}`;
+          const isDone = task.checked || doneTasks.has(id);
+          html += `<div class="task-item ${isDone ? 'done' : ''}" onclick="toggle('${key}', ${i}, '${id}')">
+            <div class="checkbox"></div>
+            <div class="task-text">${escHtml(task.text)}</div>
+          </div>`;
+        });
+      }
+      html += `</div>`;
+    }
+    document.getElementById('content').innerHTML = html;
+    document.getElementById('loading') && (document.getElementById('loading').style.display = 'none');
+
+    if (!getToken()) {
+      document.getElementById('setup-banner').style.display = 'block';
+    }
+  }
+
+  function toggle(section, index, id) {
+    const isDone = doneTasks.has(id);
+    if (isDone) {
+      doneTasks.delete(id);
+      tasks[section][index].checked = false;
+    } else {
+      doneTasks.add(id);
+      tasks[section][index].checked = true;
+    }
+    localStorage.setItem('doneTasks', JSON.stringify([...doneTasks]));
+    render();
+    saveToGitHub();
+  }
+
+  async function saveToGitHub() {
+    const token = getToken();
+    if (!token || !currentSha) return;
+
+    const today = new Date().toISOString().split('T')[0];
+    let md = `# My Priority List\n_Last updated: ${today}_\n\n`;
+
+    const sectionNames = {
+      P0: 'P0 — Do now',
+      P1: 'P1 — This week',
+      P2: 'P2 — Soon',
+      P3: 'P3 — Someday'
+    };
+
+    for (const [key, label] of Object.entries(sectionNames)) {
+      md += `## ${label}\n`;
+      for (const task of (tasks[key] || [])) {
+        md += `- [${task.checked ? 'x' : ' '}] ${task.text}\n`;
+      }
+      md += '\n';
+    }
+
+    try {
+      await fetch(API, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `token ${token}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          message: `Update priorities ${today}`,
+          content: btoa(unescape(encodeURIComponent(md))),
+          sha: currentSha
+        })
+      });
+      // refresh sha
+      const res = await fetch(API, { headers: { 'Authorization': `token ${token}` } });
+      const data = await res.json();
+      currentSha = data.sha;
+      document.getElementById('status').textContent = 'Saved to GitHub';
+    } catch (e) {
+      document.getElementById('status').textContent = 'Saved locally (GitHub sync failed)';
+    }
+  }
+
+  function escHtml(s) {
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  loadList();
+</script>
+</body>
+</html>
