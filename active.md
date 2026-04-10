@@ -15,6 +15,7 @@ _Last updated: 2026-04-10_
 - [ ] Vyshnavi PF - invest in Ethos Life
 - [ ] Shopping batch (Amazon: pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush; Fab India wedding shopping; JBL speaker)
 - [ ] Solve sleep through daily activity
+- [ ] Cricket in the morning - Apr 11
 
 ## P1 — This week
 - [ ] Dermatologist appointment
