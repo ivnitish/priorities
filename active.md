@@ -1,32 +1,32 @@
 # My Priority List
-_Last updated: 2026-04-10_
+_Last updated: 2026-04-11_
 
-## P0 — Do now
-- [x] JBL repair pickup Ã¢ÂÂ tomorrow (Apr 12)
-- [ ] File mom's PRAN report Ã¢ÂÂ tomorrow (Apr 12)
-- [ ] Vissu's baby birthday gift Ã¢ÂÂ by Sunday
-- [ ] Abhishek's daughter birthday gift Ã¢ÂÂ by Sunday
-- [ ] Kamayakya session Ã¢ÂÂ this Sunday (Apr 13)
-- [ ] Lenskart Ã¢ÂÂ lens offer expires this month
-- [ ] Zanskar Ã¢ÂÂ book tickets & plan (departing late April!)
+## P0 - Do now
+- [x] JBL repair pickup - tomorrow (Apr 12)
+- [ ] File mom's PRAN report - tomorrow (Apr 12)
+- [ ] Vissu's baby birthday gift - by Sunday
+- [ ] Abhishek's daughter birthday gift - by Sunday
+- [ ] Kamayakya session - this Sunday (Apr 13)
+- [ ] Lenskart - lens offer expires this month
+- [ ] Zanskar - book tickets & plan (departing late April!)
 - [ ] Gynecologist appointment
 - [ ] Fix Vyshnavi smallcase + PAN mismatch
 - [ ] Sign Vyshnavi up on Rovia
-- [ ] Vyshnavi PF Ã¢ÂÂ invest in Ethos Life
+- [ ] Vyshnavi PF - invest in Ethos Life
 - [ ] Shopping batch (Amazon: pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush; Fab India wedding shopping; JBL speaker)
 - [ ] Solve sleep through daily activity
 
-## P1 — This week
+## P1 - This week
 - [ ] Dermatologist appointment
-- [ ] Decide & book blood tests Ã¢ÂÂ yourself
-- [ ] Decide & book blood tests Ã¢ÂÂ parents
+- [ ] Decide & book blood tests - yourself
+- [ ] Decide & book blood tests - parents
 - [ ] Figure out savings improvement 10-20k/month
 - [ ] Sovrenn course
 - [ ] Plan novel & meaningful experience with Vyshnavi
 - [ ] Dental + ENT appointment
 - [ ] Chiropractor
 
-## P2 — Soon
+## P2 - Soon
 - [ ] EPF / cost-free loan research
 - [ ] Parents body checkup
 - [ ] Change bedsheet
@@ -35,12 +35,11 @@ _Last updated: 2026-04-10_
 - [ ] Fix IKEA light glass
 - [ ] Solve mom's phone battery issue
 - [ ] Give massage gun
-- [ ] Plumbing repair Ã¢ÂÂ kitchen sink
+- [ ] Plumbing repair - kitchen sink
 
-## P3 — Someday
-- [ ] Trust for tax saving Ã¢ÂÂ research
-- [ ] US visa Ã¢ÂÂ plan
+## P3 - Someday
+- [ ] Trust for tax saving - research
+- [ ] US visa - plan
 - [ ] Huberman routine
 - [ ] Weight tracker
-- [ ] Karaoke Ã¢ÂÂ Nannu Dhichukundhuvate
-
+- [ ] Karaoke - Nannu Dhichukundhuvate

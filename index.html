@@ -231,7 +231,7 @@
       if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
       const data = await res.json();
       currentSha = data.sha;
-      const content = atob(data.content.replace(/\n/g, ''));
+      const content = decodeURIComponent(escape(atob(data.content.replace(/\n/g, ''))));
       parseMarkdown(content);
       render();
       document.getElementById('status').textContent = 'Synced with GitHub';
@@ -345,7 +345,7 @@
         },
         body: JSON.stringify({
           message: `Update priorities ${today}`,
-          content: btoa(unescape(encodeURIComponent(md))),
+          content: btoa(encodeURIComponent(md).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode('0x' + p1))),
           sha: currentSha
         })
       });
