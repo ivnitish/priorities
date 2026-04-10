@@ -1,7 +1,7 @@
 # My Priority List
-_Last updated: 2026-04-11_
+_Last updated: 2026-04-10_
 
-## P0 - Do now
+## P0 — Do now
 - [x] JBL repair pickup - tomorrow (Apr 12)
 - [ ] File mom's PRAN report - tomorrow (Apr 12)
 - [ ] Vissu's baby birthday gift - by Sunday
@@ -16,7 +16,7 @@ _Last updated: 2026-04-11_
 - [ ] Shopping batch (Amazon: pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush; Fab India wedding shopping; JBL speaker)
 - [ ] Solve sleep through daily activity
 
-## P1 - This week
+## P1 — This week
 - [ ] Dermatologist appointment
 - [ ] Decide & book blood tests - yourself
 - [ ] Decide & book blood tests - parents
@@ -26,7 +26,7 @@ _Last updated: 2026-04-11_
 - [ ] Dental + ENT appointment
 - [ ] Chiropractor
 
-## P2 - Soon
+## P2 — Soon
 - [ ] EPF / cost-free loan research
 - [ ] Parents body checkup
 - [ ] Change bedsheet
@@ -37,9 +37,10 @@ _Last updated: 2026-04-11_
 - [ ] Give massage gun
 - [ ] Plumbing repair - kitchen sink
 
-## P3 - Someday
+## P3 — Someday
 - [ ] Trust for tax saving - research
 - [ ] US visa - plan
 - [ ] Huberman routine
 - [ ] Weight tracker
 - [ ] Karaoke - Nannu Dhichukundhuvate
+
