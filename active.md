@@ -2,7 +2,7 @@
 _Last updated: 2026-04-11_
 
 ## P0 — Do now
-- [ ] JBL repair pickup - tomorrow (Apr 12)
+- [x] JBL repair pickup - tomorrow (Apr 12)
 - [ ] File mom's PRAN report - tomorrow (Apr 12)
 - [ ] Vissu's baby birthday gift - by Sunday
 - [ ] Abhishek's daughter birthday gift - by Sunday
@@ -48,5 +48,5 @@ _Last updated: 2026-04-11_
 - [ ] Huberman routine
 - [ ] Weight tracker
 - [ ] Karaoke - Nannu Dhichukundhuvate
-- [x] Second brain- https://x.com/defileo/status/2042241063612502162?s=46
+- [ ] Second brain- https://x.com/defileo/status/2042241063612502162?s=46
 
