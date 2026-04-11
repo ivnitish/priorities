@@ -27,6 +27,7 @@ _Last updated: 2026-04-11_
 - [ ] Plan novel & meaningful experience with Vyshnavi
 - [ ] Dental + ENT appointment
 - [ ] Chiropractor
+- [ ] Us tourist visa
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
