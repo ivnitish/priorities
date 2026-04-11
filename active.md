@@ -5,7 +5,7 @@ _Last updated: 2026-04-11_
 - [x] JBL repair pickup - tomorrow (Apr 12)
 - [x] File mom's PRAN report - tomorrow (Apr 12)
 - [ ] Vissu's baby birthday gift - by Sunday
-- [ ] Abhishek's daughter birthday gift - by Sunday
+- [x] Abhishek's daughter birthday gift - by Sunday
 - [ ] Kamayakya session - this Sunday (Apr 13)
 - [ ] Lenskart - lens offer expires this month
 - [ ] Zanskar - book tickets & plan (departing late April!)
