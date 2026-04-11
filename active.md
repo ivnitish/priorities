@@ -16,7 +16,7 @@ _Last updated: 2026-04-11_
 - [ ] Shopping batch (Amazon: pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush; Fab India wedding shopping; JBL speaker)
 - [ ] Solve sleep through daily activity
 - [ ] Study Munger mental models (start with 6 core ones)
-- [ ] Cricket in the morning - Apr 11
+- [x] Cricket in the morning - Apr 11
 
 ## P1 — This week
 - [ ] Dermatologist appointment
