@@ -29,6 +29,7 @@ _Last updated: 2026-04-12_
 - [ ] Apply for US tourist visa - research requirements first - 30 mins
 - [ ] Study Munger mental models (start with 6 core ones)
 - [ ] Analyse vysh tax returns
+- [ ] Stick research ideas - https://x.com/alc2022/status/2042552820952396139?s=46
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
