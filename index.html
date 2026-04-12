@@ -549,20 +549,42 @@
             <span id="done-label-${key}">${done.length} completed — tap to show</span>
           </div>
           <div id="done-section-${key}" style="display:none">`;
-          done.forEach((task, i) => {
-            const realIdx = items.indexOf(task);
-            const id = `${key}-${realIdx}`;
-            html += `<div class="task-item done" onclick="toggle('${key}', ${realIdx}, '${id}')">
-              <div class="checkbox"></div>
-              <div class="task-text">${escHtml(task.text)}</div>
-              <span style="font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;background:#f0f0f0;color:#aaa">${key}</span>
-            </div>`;
-          });
+          // skip inline done — shown in global completed section below
           html += `</div>`;
         }
       }
       html += `</div>`;
     }
+
+    // ── Global completed section at bottom ──
+    const allDone = [];
+    for (const [key, items] of Object.entries(tasks)) {
+      items.forEach((task, i) => {
+        if (task.checked || doneTasks.has(`${key}-${i}`)) {
+          allDone.push({ task, key, index: i });
+        }
+      });
+    }
+
+    if (allDone.length > 0) {
+      html += `<div class="section" style="margin-top:8px">
+        <div class="section-header" style="background:#f5f5f5;color:#aaa;cursor:pointer" onclick="toggleDone('_all')">
+          <span id="done-label-_all">Completed (${allDone.length}) — tap to show</span>
+        </div>
+        <div id="done-section-_all" style="display:none">`;
+      allDone.forEach(({ task, key, index }) => {
+        const id = `${key}-${index}`;
+        const today = new Date().toLocaleDateString('en-IN', { day:'numeric', month:'short' });
+        html += `<div class="task-item done" onclick="toggle('${key}', ${index}, '${id}')">
+          <div class="checkbox"></div>
+          <div class="task-text" style="flex:1">${escHtml(task.text)}</div>
+          <span style="font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;background:#fff0f0;color:#c0392b;margin-right:4px">${key}</span>
+          <span style="font-size:10px;color:#bbb">${today}</span>
+        </div>`;
+      });
+      html += `</div></div>`;
+    }
+
     document.getElementById('content').innerHTML = html;
     document.getElementById('loading') && (document.getElementById('loading').style.display = 'none');
 
