@@ -118,6 +118,26 @@
     .p2 .section-header { background: #f0f8ff; color: #2980b9; }
     .p3 .section-header { background: #f5f5f5; color: #7f8c8d; }
 
+    .drag-handle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3px;
+      padding: 4px 2px;
+      cursor: grab;
+      opacity: 0.3;
+      min-width: 16px;
+      margin-top: 2px;
+    }
+
+    .drag-handle span {
+      display: block;
+      width: 14px;
+      height: 2px;
+      background: #1a1a1a;
+      border-radius: 2px;
+    }
+
     .task-item {
       display: flex;
       align-items: flex-start;
@@ -127,6 +147,19 @@
       gap: 12px;
       transition: background 0.1s;
       -webkit-tap-highlight-color: transparent;
+    }
+
+    .task-item.dragging {
+      opacity: 0.4;
+      background: #f0f0f0;
+    }
+
+    .task-item.drag-over {
+      border-top: 2px solid #2980b9;
+    }
+
+    .section.drag-target .section-header {
+      outline: 2px dashed #2980b9;
     }
 
     .task-item:last-child { border-bottom: none; }
@@ -443,7 +476,11 @@
           const id = `${key}-${realIdx}`;
           html += `
           <div class="task-wrapper" id="wrap-${id}">
-            <div class="task-item" onclick="expandTask('${key}', ${realIdx}, '${id}', event)">
+            <div class="task-item" onclick="expandTask('${key}', ${realIdx}, '${id}', event)"
+              data-section="${key}" data-index="${realIdx}">
+              <div class="drag-handle" onmousedown="startDrag(event,'${key}',${realIdx})" ontouchstart="startDrag(event,'${key}',${realIdx})">
+                <span></span><span></span><span></span>
+              </div>
               <div class="checkbox" onclick="toggle('${key}', ${realIdx}, '${id}'); event.stopPropagation()"></div>
               <div class="task-text" id="text-${id}">${escHtml(task.text)}</div>
             </div>
@@ -547,6 +584,107 @@
 
   function escHtml(s) {
     return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  // ── DRAG & DROP ──
+  let drag = null; // { section, index, el, clone, startY, startX }
+
+  function startDrag(e, section, index) {
+    e.stopPropagation();
+    const taskEl = e.currentTarget.closest('.task-item');
+    const rect = taskEl.getBoundingClientRect();
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+
+    const clone = taskEl.cloneNode(true);
+    clone.style.cssText = `position:fixed;left:${rect.left}px;top:${rect.top}px;width:${rect.width}px;
+      opacity:0.85;pointer-events:none;z-index:1000;box-shadow:0 8px 24px rgba(0,0,0,0.15);
+      border-radius:8px;background:#fff;`;
+    document.body.appendChild(clone);
+    taskEl.classList.add('dragging');
+
+    drag = { section, index, el: taskEl, clone, startY: clientY, startX: clientX, rect };
+
+    document.addEventListener('mousemove', onDragMove);
+    document.addEventListener('touchmove', onDragMove, { passive: false });
+    document.addEventListener('mouseup', onDragEnd);
+    document.addEventListener('touchend', onDragEnd);
+  }
+
+  function onDragMove(e) {
+    if (!drag) return;
+    e.preventDefault();
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const dy = clientY - drag.startY;
+    const dx = clientX - drag.startX;
+    drag.clone.style.top = (drag.rect.top + dy) + 'px';
+    drag.clone.style.left = (drag.rect.left + dx) + 'px';
+
+    // highlight drop target
+    document.querySelectorAll('.task-item.drag-over, .section.drag-target').forEach(el => {
+      el.classList.remove('drag-over', 'drag-target');
+    });
+
+    const els = document.elementsFromPoint(clientX, clientY);
+    const overTask = els.find(el => el.classList.contains('task-item') && !el.classList.contains('dragging'));
+    const overSection = els.find(el => el.classList.contains('section'));
+
+    if (overTask) overTask.classList.add('drag-over');
+    else if (overSection) overSection.classList.add('drag-target');
+  }
+
+  function onDragEnd(e) {
+    if (!drag) return;
+    document.removeEventListener('mousemove', onDragMove);
+    document.removeEventListener('touchmove', onDragMove);
+    document.removeEventListener('mouseup', onDragEnd);
+    document.removeEventListener('touchend', onDragEnd);
+
+    const clientY = e.changedTouches ? e.changedTouches[0].clientY : e.clientY;
+    const clientX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
+
+    drag.clone.remove();
+    drag.el.classList.remove('dragging');
+    document.querySelectorAll('.task-item.drag-over, .section.drag-target').forEach(el => {
+      el.classList.remove('drag-over', 'drag-target');
+    });
+
+    // find drop target
+    drag.clone.style.display = 'none';
+    const els = document.elementsFromPoint(clientX, clientY);
+    const overTask = els.find(el => el.classList.contains('task-item') && !el.classList.contains('dragging'));
+    const overSection = els.find(el => el.classList.contains('section'));
+
+    const fromSection = drag.section;
+    const fromIndex = drag.index;
+    const task = tasks[fromSection][fromIndex];
+
+    if (overTask) {
+      const toSection = overTask.dataset.section;
+      const toIndex = parseInt(overTask.dataset.index);
+      if (toSection && !isNaN(toIndex)) {
+        tasks[fromSection].splice(fromIndex, 1);
+        if (fromSection === toSection) {
+          const adjustedTo = toIndex > fromIndex ? toIndex - 1 : toIndex;
+          tasks[toSection].splice(adjustedTo, 0, task);
+        } else {
+          tasks[toSection].splice(toIndex, 0, task);
+        }
+        render();
+        saveToGitHub();
+      }
+    } else if (overSection) {
+      const toSection = [...overSection.classList].find(c => ['p0','p1','p2','p3'].includes(c))?.toUpperCase();
+      if (toSection && toSection !== fromSection) {
+        tasks[fromSection].splice(fromIndex, 1);
+        tasks[toSection].push(task);
+        render();
+        saveToGitHub();
+      }
+    }
+
+    drag = null;
   }
 
   let openWrap = null;
