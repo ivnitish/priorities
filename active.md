@@ -28,6 +28,7 @@ _Last updated: 2026-04-12_
 - [ ] Call chiropractor, book appointment - 5 mins
 - [ ] Apply for US tourist visa - research requirements first - 30 mins
 - [ ] Study Munger mental models (start with 6 core ones)
+- [ ] Analyse vysh tax returns
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
