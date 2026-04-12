@@ -540,7 +540,6 @@
               <span class="rank-label">Rank</span>
               ${[1,2,3,4,5].map(n => `<button class="r-btn ${task.rank===n?'active':''}" onclick="setRank('${key}',${realIdx},${n},'${id}')">${n}</button>`).join('')}
             </div>` : ''}
-            <div class="task-actions" id="acts-${id}"></div>
           </div>`;
         });
 
@@ -555,6 +554,7 @@
             html += `<div class="task-item done" onclick="toggle('${key}', ${realIdx}, '${id}')">
               <div class="checkbox"></div>
               <div class="task-text">${escHtml(task.text)}</div>
+              <span style="font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;background:#f0f0f0;color:#aaa">${key}</span>
             </div>`;
           });
           html += `</div>`;
@@ -762,17 +762,15 @@
   function expandTask(section, index, id, e) {
     const prow = document.getElementById(`prow-${id}`);
     const rrow = document.getElementById(`rrow-${id}`);
-    const acts = document.getElementById(`acts-${id}`);
     const wrap = document.getElementById(`wrap-${id}`);
 
     if (openWrap && openWrap !== wrap) {
-      openWrap.querySelectorAll('.priority-row, .rank-row, .task-actions').forEach(el => el.classList.remove('visible'));
+      openWrap.querySelectorAll('.priority-row, .rank-row').forEach(el => el.classList.remove('visible'));
     }
 
     const isOpen = prow.classList.contains('visible');
     prow.classList.toggle('visible', !isOpen);
     if (rrow) rrow.classList.toggle('visible', !isOpen);
-    acts.classList.toggle('visible', !isOpen);
     openWrap = isOpen ? null : wrap;
   }
 
@@ -792,7 +790,7 @@
   function changeP(fromSection, index, toSection, id) {
     if (fromSection === toSection) {
       document.getElementById(`prow-${id}`)?.classList.remove('visible');
-      document.getElementById(`acts-${id}`)?.classList.remove('visible');
+      document.getElementById(`rrow-${id}`)?.classList.remove('visible');
       return;
     }
     const task = tasks[fromSection][index];
