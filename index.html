@@ -527,7 +527,7 @@
               <div class="task-text" id="text-${id}" onclick="expandTask('${key}', ${realIdx}, '${id}', event)">${escHtml(task.text)}</div>
               ${dateBadge(task.text, key)}
               ${task.rank && ['P0','P1'].includes(key) ? `<span style="font-size:11px;font-weight:700;color:#aaa;min-width:16px">#${task.rank}</span>` : ''}
-              <button style="border:none;background:none;color:#bbb;font-size:15px;cursor:pointer;padding:0 4px;line-height:1" onclick="editTask('${key}',${realIdx},'${id}');event.stopPropagation()">✏️</button>
+              <button style="border:none;background:none;color:#bbb;font-size:15px;cursor:pointer;padding:0 4px;line-height:1;display:flex;align-items:center" onclick="editTask('${key}',${realIdx},'${id}');event.stopPropagation()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
               <button style="border:none;background:none;color:#ddd;font-size:18px;cursor:pointer;padding:0 4px;line-height:1" onclick="deleteTask('${key}',${realIdx});event.stopPropagation()">×</button>
             </div>
             <div class="priority-row" id="prow-${id}">
