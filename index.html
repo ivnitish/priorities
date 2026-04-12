@@ -530,14 +530,14 @@
               <button style="border:none;background:none;color:#bbb;font-size:15px;cursor:pointer;padding:0 4px;line-height:1;display:flex;align-items:center" onclick="editTask('${key}',${realIdx},'${id}');event.stopPropagation()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
               <button style="border:none;background:none;color:#ddd;font-size:18px;cursor:pointer;padding:0 4px;line-height:1" onclick="deleteTask('${key}',${realIdx});event.stopPropagation()">×</button>
             </div>
-            <div class="priority-row" id="prow-${id}">
+            <div class="priority-row" id="prow-${id}" onclick="event.stopPropagation()">
               <button class="p-btn p0 ${key==='P0'?'active':''}" onclick="changeP('${key}',${realIdx},'P0','${id}');event.stopPropagation()">P0</button>
               <button class="p-btn p1 ${key==='P1'?'active':''}" onclick="changeP('${key}',${realIdx},'P1','${id}');event.stopPropagation()">P1</button>
               <button class="p-btn p2 ${key==='P2'?'active':''}" onclick="changeP('${key}',${realIdx},'P2','${id}');event.stopPropagation()">P2</button>
               <button class="p-btn p3 ${key==='P3'?'active':''}" onclick="changeP('${key}',${realIdx},'P3','${id}');event.stopPropagation()">P3</button>
             </div>
             ${['P0','P1'].includes(key) ? `
-            <div class="rank-row" id="rrow-${id}">
+            <div class="rank-row" id="rrow-${id}" onclick="event.stopPropagation()">
               <span class="rank-label">Rank</span>
               ${[1,2,3,4,5].map(n => `<button class="r-btn ${task.rank===n?'active':''}" onclick="setRank('${key}',${realIdx},${n},'${id}');event.stopPropagation()">${n}</button>`).join('')}
             </div>` : ''}
