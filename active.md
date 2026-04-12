@@ -3,7 +3,6 @@ _Last updated: 2026-04-12_
 
 ## P0 — Do now
 - [ ] Vyshnavi PF - invest in Ethos Life - 15 mins
-- [ ] Open Lenskart app, order lenses - 10 mins
 - [x] JBL repair pickup - tomorrow (Apr 12)
 - [x] File mom's PRAN report - tomorrow (Apr 12)
 - [ ] Buy Vissu's baby gift - 10 mins
@@ -29,6 +28,7 @@ _Last updated: 2026-04-12_
 - [ ] Call clinic, book dental + ENT together - 5 mins
 - [ ] Call chiropractor, book appointment - 5 mins
 - [ ] Apply for US tourist visa - research requirements first - 30 mins
+- [ ] Open Lenskart app, order lenses - 10 mins
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
