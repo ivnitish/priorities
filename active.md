@@ -2,12 +2,12 @@
 _Last updated: 2026-04-12_
 
 ## P0 — Do now
+- [ ] Open Lenskart app, order lenses - 10 mins
 - [x] JBL repair pickup - tomorrow (Apr 12)
 - [x] File mom's PRAN report - tomorrow (Apr 12)
 - [ ] Buy Vissu's baby gift - 10 mins
 - [x] Abhishek's daughter birthday gift - by Sunday
 - [x] Confirm Kamayakya session details - 2 mins
-- [ ] Open Lenskart app, order lenses - 10 mins
 - [ ] Open MakeMyTrip, book Zanskar tickets - 20 mins
 - [ ] Call Apollo, book gynecologist - 5 mins
 - [ ] Call Smallcase support, fix Vyshnavi PAN mismatch - 10 mins
