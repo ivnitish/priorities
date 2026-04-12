@@ -575,7 +575,7 @@
       allDone.forEach(({ task, key, index }) => {
         const id = `${key}-${index}`;
         const today = new Date().toLocaleDateString('en-IN', { day:'numeric', month:'short' });
-        html += `<div class="task-item done" onclick="toggle('${key}', ${index}, '${id}')">
+        html += `<div class="task-item done" onclick="toggle('${key}', ${index}, '${id}'); event.stopPropagation()">
           <div class="checkbox"></div>
           <div class="task-text" style="flex:1">${escHtml(task.text)}</div>
           <span style="font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;background:#fff0f0;color:#c0392b;margin-right:4px">${key}</span>
