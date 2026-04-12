@@ -6,7 +6,7 @@ _Last updated: 2026-04-12_
 - [x] File mom's PRAN report - tomorrow (Apr 12)
 - [ ] Buy Vissu's baby gift - 10 mins
 - [x] Abhishek's daughter birthday gift - by Sunday
-- [ ] Confirm Kamayakya session details - 2 mins
+- [x] Confirm Kamayakya session details - 2 mins
 - [ ] Open Lenskart app, order lenses - 10 mins
 - [ ] Open MakeMyTrip, book Zanskar tickets - 20 mins
 - [ ] Call Apollo, book gynecologist - 5 mins
