@@ -522,12 +522,12 @@
           const id = `${key}-${realIdx}`;
           html += `
           <div class="task-wrapper" id="wrap-${id}">
-            <div class="task-item" onclick="expandTask('${key}', ${realIdx}, '${id}', event)"
-              data-section="${key}" data-index="${realIdx}">
-<div class="checkbox" onclick="toggle('${key}', ${realIdx}, '${id}'); event.stopPropagation()"></div>
-              <div class="task-text" id="text-${id}">${escHtml(task.text)}</div>
+            <div class="task-item" data-section="${key}" data-index="${realIdx}">
+              <div class="checkbox" onclick="toggle('${key}', ${realIdx}, '${id}'); event.stopPropagation()"></div>
+              <div class="task-text" id="text-${id}" onclick="expandTask('${key}', ${realIdx}, '${id}', event); editTask('${key}',${realIdx},'${id}')">${escHtml(task.text)}</div>
               ${dateBadge(task.text, key)}
               ${task.rank && ['P0','P1'].includes(key) ? `<span style="font-size:11px;font-weight:700;color:#aaa;min-width:16px">#${task.rank}</span>` : ''}
+              <button style="border:none;background:none;color:#ddd;font-size:18px;cursor:pointer;padding:0 4px;line-height:1" onclick="deleteTask('${key}',${realIdx});event.stopPropagation()">×</button>
             </div>
             <div class="priority-row" id="prow-${id}">
               <button class="p-btn p0 ${key==='P0'?'active':''}" onclick="changeP('${key}',${realIdx},'P0','${id}')">P0</button>
@@ -540,10 +540,7 @@
               <span class="rank-label">Rank</span>
               ${[1,2,3,4,5].map(n => `<button class="r-btn ${task.rank===n?'active':''}" onclick="setRank('${key}',${realIdx},${n},'${id}')">${n}</button>`).join('')}
             </div>` : ''}
-            <div class="task-actions" id="acts-${id}">
-              <button class="act-btn edit-btn" onclick="editTask('${key}',${realIdx},'${id}')">Edit</button>
-              <button class="act-btn archive" onclick="deleteTask('${key}',${realIdx})">Delete</button>
-            </div>
+            <div class="task-actions" id="acts-${id}"></div>
           </div>`;
         });
 
@@ -813,12 +810,13 @@
 
   function editTask(section, index, id) {
     const textEl = document.getElementById(`text-${id}`);
+    if (!textEl || textEl.querySelector('input')) return; // already editing
     const current = tasks[section][index].text;
     textEl.innerHTML = `<input class="task-text editing" value="${escHtml(current)}"
       onblur="saveEdit('${section}',${index},'${id}',this.value)"
       onkeydown="if(event.key==='Enter'){this.blur()}"
     >`;
-    textEl.querySelector('input').focus();
+    setTimeout(() => textEl.querySelector('input')?.focus(), 50);
   }
 
   function saveEdit(section, index, id, newText) {
