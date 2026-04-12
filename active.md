@@ -18,6 +18,7 @@ _Last updated: 2026-04-12_
 - [ ] Solve sleep through daily activity
 - [x] Cricket in the morning - Apr 11
 - [ ] Visit nearby crossfit
+- [ ] Check about personal trainer in purva
 
 ## P1 — This week
 - [ ] Call chiropractor, book appointment - 5 mins
