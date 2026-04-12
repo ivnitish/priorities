@@ -2,6 +2,7 @@
 _Last updated: 2026-04-12_
 
 ## P0 — Do now
+- [ ] Decie on blood tests, book lab online and then Gynacologist - yourself - 10 mins
 - [ ] Call Apollo, book gynecologist - 5 mins
 - [ ] Vyshnavi PF - invest in small case/Ethos Life - 15 mins
 - [x] JBL repair pickup - tomorrow (Apr 12)
@@ -16,7 +17,6 @@ _Last updated: 2026-04-12_
 - [x] Book Fab India visit for wedding shopping - 5 mins
 - [ ] Solve sleep through daily activity
 - [x] Cricket in the morning - Apr 11
-- [ ] Decie on blood tests, book lab online and then Gynacologist - yourself - 10 mins
 
 ## P1 — This week
 - [ ] Open Lenskart app, order lenses - 10 mins
