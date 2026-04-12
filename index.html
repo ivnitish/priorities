@@ -879,6 +879,15 @@
     await saveToGitHub();
   }
 
+  // Auto-login from URL hash: bookmark ivnitish.github.io/priorities#ghp_yourtoken
+  (function() {
+    const hash = location.hash.slice(1);
+    if (hash.startsWith('ghp_') || hash.startsWith('github_pat_')) {
+      localStorage.setItem('gh_token', hash);
+      history.replaceState(null, '', location.pathname + location.search);
+    }
+  })();
+
   loadList();
 </script>
 </body>
