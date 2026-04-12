@@ -500,7 +500,7 @@
       const match = content.match(/_Last updated: (.+)_/);
       if (match) document.getElementById('last-updated').textContent = match[1];
     } catch (e) {
-      document.getElementById('status').textContent = 'Could not load — showing cached';
+      document.getElementById('status').innerHTML = 'Could not load — <a href="#" onclick="openTokenSettings();return false;" style="color:#c0392b;font-weight:700">update token</a> or check connection';
       renderFromCache();
     }
   }
