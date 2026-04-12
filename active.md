@@ -17,10 +17,10 @@ _Last updated: 2026-04-12_
 - [ ] Solve sleep through daily activity
 - [ ] Study Munger mental models (start with 6 core ones)
 - [x] Cricket in the morning - Apr 11
+- [ ] Ask doctor which blood tests, book lab online - yourself - 10 mins
 
 ## P1 — This week
 - [ ] Call dermatologist, book appointment - 5 mins
-- [ ] Ask doctor which blood tests, book lab online - yourself - 10 mins
 - [ ] Ask doctor which blood tests, book lab online - parents - 10 mins
 - [ ] Open bank app, list 3 expenses to cut (savings improvement 10-20k) - 20 mins
 - [ ] Watch one Sovrenn video today - 30 mins
