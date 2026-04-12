@@ -1,10 +1,10 @@
 # My Priority List
 _Last updated: 2026-04-12_
 
-## P0 - Do now
+## P0 — Do now
 - [x] JBL repair pickup - tomorrow (Apr 12)
 - [x] File mom's PRAN report - tomorrow (Apr 12)
-- [ ] Order or buy Vissu's baby gift - 10 mins
+- [ ] Buy Vissu's baby gift - 10 mins
 - [x] Abhishek's daughter birthday gift - by Sunday
 - [ ] Confirm Kamayakya session details - 2 mins
 - [ ] Open Lenskart app, order lenses - 10 mins
@@ -19,7 +19,7 @@ _Last updated: 2026-04-12_
 - [ ] Study Munger mental models (start with 6 core ones)
 - [x] Cricket in the morning - Apr 11
 
-## P1 - This week
+## P1 — This week
 - [ ] Call dermatologist, book appointment - 5 mins
 - [ ] Ask doctor which blood tests, book lab online - yourself - 10 mins
 - [ ] Ask doctor which blood tests, book lab online - parents - 10 mins
@@ -30,7 +30,7 @@ _Last updated: 2026-04-12_
 - [ ] Call chiropractor, book appointment - 5 mins
 - [ ] Apply for US tourist visa - research requirements first - 30 mins
 
-## P2 - Soon
+## P2 — Soon
 - [ ] EPF / cost-free loan research
 - [ ] Book parents full body checkup online - 10 mins
 - [ ] Change bedsheet
@@ -42,10 +42,11 @@ _Last updated: 2026-04-12_
 - [ ] Call plumber, fix kitchen sink - 10 mins
 - [ ] Replace 10% plastic in kitchen
 
-## P3 - Someday
+## P3 — Someday
 - [ ] Set up Claude Code automation hooks (weekly nudge, monthly reflection)
 - [ ] Trust for tax saving - research
 - [ ] Huberman routine
 - [ ] Weight tracker
 - [ ] Karaoke - Nannu Dhichukundhuvate
 - [ ] Second brain - https://x.com/defileo/status/2042241063612502162?s=46
+
