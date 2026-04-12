@@ -264,7 +264,7 @@
       color: #555;
     }
 
-    .act-btn.archive { background: #fff8f0; color: #e67e22; }
+    .act-btn.archive { background: #fff0f0; color: #c0392b; }
     .act-btn.edit-btn { background: #f0f8ff; color: #2980b9; }
 
     .collapsed-done {
@@ -492,7 +492,7 @@
             </div>
             <div class="task-actions" id="acts-${id}">
               <button class="act-btn edit-btn" onclick="editTask('${key}',${realIdx},'${id}')">Edit</button>
-              <button class="act-btn archive" onclick="archiveTask('${key}',${realIdx},'${id}')">Archive</button>
+              <button class="act-btn archive" onclick="deleteTask('${key}',${realIdx})">Delete</button>
             </div>
           </div>`;
         });
@@ -718,13 +718,8 @@
     saveToGitHub();
   }
 
-  function archiveTask(section, index, id) {
-    const task = tasks[section][index];
+  function deleteTask(section, index) {
     tasks[section].splice(index, 1);
-    // save to done log via github later — for now just remove
-    const archived = JSON.parse(localStorage.getItem('archivedTasks') || '[]');
-    archived.push({ text: task.text, section, date: new Date().toISOString().split('T')[0] });
-    localStorage.setItem('archivedTasks', JSON.stringify(archived));
     render();
     saveToGitHub();
   }
