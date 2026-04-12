@@ -39,12 +39,20 @@
 
     #models span {
       display: block;
-      opacity: 0.75;
+      opacity: 0.8;
+      margin-bottom: 6px;
     }
+
+    #models span:last-child { margin-bottom: 0; }
 
     #models strong {
       opacity: 1;
       color: #fff;
+    }
+
+    #models em {
+      opacity: 0.55;
+      font-style: italic;
     }
 
     #status {
@@ -300,9 +308,9 @@
   <span id="last-updated"></span>
 </header>
 <div id="models">
-  <span><strong>Inversion</strong> — What would guarantee failure here? Avoid that.</span>
-  <span><strong>Opportunity cost</strong> — Is this the best use of this time/money?</span>
-  <span><strong>Circle of competence</strong> — Do I actually understand this well enough to act?</span>
+  <span><strong>Inversion</strong> — Find what guarantees failure, then stop doing that. <em>Most tasks stay undone not from lack of motivation but from too many open loops — close them first.</em></span>
+  <span><strong>Opportunity cost</strong> — Every yes is a no to everything else. <em>An evening on autopilot scrolling is an evening not spent with Vyshnavi or reading.</em></span>
+  <span><strong>Circle of competence</strong> — Only act where you genuinely understand. <em>You don't need a view on everything — fewer, deeper bets beat scattered opinions.</em></span>
 </div>
 <div id="status">Loading...</div>
 
