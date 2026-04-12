@@ -35,6 +35,7 @@ _Last updated: 2026-04-12_
 - [ ] Send Analytics prep doc to Souji
 - [ ] Souji - Analytics pdf
 - [ ] Apply skin serum while sleeping
+- [ ] Add more curtains in bedroom
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
