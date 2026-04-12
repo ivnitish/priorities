@@ -15,7 +15,6 @@ _Last updated: 2026-04-12_
 - [ ] Open Amazon, place shopping order (pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush) - 15 mins
 - [x] Book Fab India visit for wedding shopping - 5 mins
 - [ ] Solve sleep through daily activity
-- [ ] Study Munger mental models (start with 6 core ones)
 - [x] Cricket in the morning - Apr 11
 - [ ] Decie on blood tests, book lab online and then Gynacologist - yourself - 10 mins
 
@@ -28,6 +27,7 @@ _Last updated: 2026-04-12_
 - [ ] Call chiropractor, book appointment - 5 mins
 - [ ] Apply for US tourist visa - research requirements first - 30 mins
 - [ ] Open Lenskart app, order lenses - 10 mins
+- [ ] Study Munger mental models (start with 6 core ones)
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
