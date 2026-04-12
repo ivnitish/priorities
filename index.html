@@ -531,15 +531,15 @@
               <button style="border:none;background:none;color:#ddd;font-size:18px;cursor:pointer;padding:0 4px;line-height:1" onclick="deleteTask('${key}',${realIdx});event.stopPropagation()">×</button>
             </div>
             <div class="priority-row" id="prow-${id}">
-              <button class="p-btn p0 ${key==='P0'?'active':''}" onclick="changeP('${key}',${realIdx},'P0','${id}')">P0</button>
-              <button class="p-btn p1 ${key==='P1'?'active':''}" onclick="changeP('${key}',${realIdx},'P1','${id}')">P1</button>
-              <button class="p-btn p2 ${key==='P2'?'active':''}" onclick="changeP('${key}',${realIdx},'P2','${id}')">P2</button>
-              <button class="p-btn p3 ${key==='P3'?'active':''}" onclick="changeP('${key}',${realIdx},'P3','${id}')">P3</button>
+              <button class="p-btn p0 ${key==='P0'?'active':''}" onclick="changeP('${key}',${realIdx},'P0','${id}');event.stopPropagation()">P0</button>
+              <button class="p-btn p1 ${key==='P1'?'active':''}" onclick="changeP('${key}',${realIdx},'P1','${id}');event.stopPropagation()">P1</button>
+              <button class="p-btn p2 ${key==='P2'?'active':''}" onclick="changeP('${key}',${realIdx},'P2','${id}');event.stopPropagation()">P2</button>
+              <button class="p-btn p3 ${key==='P3'?'active':''}" onclick="changeP('${key}',${realIdx},'P3','${id}');event.stopPropagation()">P3</button>
             </div>
             ${['P0','P1'].includes(key) ? `
             <div class="rank-row" id="rrow-${id}">
               <span class="rank-label">Rank</span>
-              ${[1,2,3,4,5].map(n => `<button class="r-btn ${task.rank===n?'active':''}" onclick="setRank('${key}',${realIdx},${n},'${id}')">${n}</button>`).join('')}
+              ${[1,2,3,4,5].map(n => `<button class="r-btn ${task.rank===n?'active':''}" onclick="setRank('${key}',${realIdx},${n},'${id}');event.stopPropagation()">${n}</button>`).join('')}
             </div>` : ''}
           </div>`;
         });
