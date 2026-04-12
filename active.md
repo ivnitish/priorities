@@ -2,6 +2,7 @@
 _Last updated: 2026-04-12_
 
 ## P0 — Do now
+- [ ] Vyshnavi PF - invest in Ethos Life - 15 mins
 - [ ] Open Lenskart app, order lenses - 10 mins
 - [x] JBL repair pickup - tomorrow (Apr 12)
 - [x] File mom's PRAN report - tomorrow (Apr 12)
@@ -12,7 +13,6 @@ _Last updated: 2026-04-12_
 - [ ] Call Apollo, book gynecologist - 5 mins
 - [ ] Call Smallcase support, fix Vyshnavi PAN mismatch - 10 mins
 - [ ] Open Rovia app, complete Vyshnavi signup - 15 mins
-- [ ] Vyshnavi PF - invest in Ethos Life - 15 mins
 - [ ] Open Amazon, place shopping order (pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush) - 15 mins
 - [ ] Book Fab India visit for wedding shopping - 5 mins
 - [ ] Solve sleep through daily activity
