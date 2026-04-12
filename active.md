@@ -31,6 +31,7 @@ _Last updated: 2026-04-12_
 - [ ] Analyse vysh tax returns
 - [ ] Stick research ideas - https://x.com/alc2022/status/2042552820952396139?s=46
 - [ ] Send Analytics prep doc to Souji
+- [ ] Souji - Analytics pdf
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
