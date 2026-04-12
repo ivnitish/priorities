@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Priority UI Test</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 24px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #555;
+    }
+
+    /* ── SHARED TASK STYLE ── */
+    .task {
+      background: #fff;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .checkbox {
+      width: 22px; height: 22px; min-width: 22px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .task-text { font-size: 15px; flex: 1; line-height: 1.4; }
+
+    /* ── OPTION A: Badge dropdown ── */
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 7px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      background: #f0f0f0;
+      color: #555;
+      min-width: 36px;
+      text-align: center;
+    }
+
+    .badge.p0 { background: #fff0f0; color: #c0392b; }
+    .badge.p1 { background: #fff8f0; color: #e67e22; }
+    .badge.p2 { background: #f0f8ff; color: #2980b9; }
+    .badge.p3 { background: #f5f5f5; color: #7f8c8d; }
+
+    /* ── OPTION C: Tap → inline buttons ── */
+    .task-c { flex-wrap: wrap; cursor: pointer; }
+
+    .priority-row {
+      display: none;
+      width: 100%;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .priority-row.visible { display: flex; }
+
+    .p-btn {
+      flex: 1;
+      padding: 8px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .p-btn.p0 { background: #fff0f0; color: #c0392b; }
+    .p-btn.p1 { background: #fff8f0; color: #e67e22; }
+    .p-btn.p2 { background: #f0f8ff; color: #2980b9; }
+    .p-btn.p3 { background: #f5f5f5; color: #7f8c8d; }
+    .p-btn.active { outline: 2px solid currentColor; }
+
+    .label {
+      background: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="label">Option A — Badge dropdown (tap the P0/P1 label)</div>
+
+<h2>P0 — Do now</h2>
+
+<div class="task">
+  <div class="checkbox"></div>
+  <div class="task-text">Fix Vyshnavi smallcase + PAN mismatch</div>
+  <select class="badge p0" onchange="changeBadge(this)">
+    <option value="p0" selected>P0</option>
+    <option value="p1">P1</option>
+    <option value="p2">P2</option>
+    <option value="p3">P3</option>
+  </select>
+</div>
+
+<div class="task">
+  <div class="checkbox"></div>
+  <div class="task-text">Zanskar — book tickets</div>
+  <select class="badge p0" onchange="changeBadge(this)">
+    <option value="p0" selected>P0</option>
+    <option value="p1">P1</option>
+    <option value="p2">P2</option>
+    <option value="p3">P3</option>
+  </select>
+</div>
+
+<div class="task">
+  <div class="checkbox"></div>
+  <div class="task-text">Gynecologist appointment</div>
+  <select class="badge p1" onchange="changeBadge(this)">
+    <option value="p0">P0</option>
+    <option value="p1" selected>P1</option>
+    <option value="p2">P2</option>
+    <option value="p3">P3</option>
+  </select>
+</div>
+
+
+<div class="label" style="margin-top:40px">Option C — Tap task → priority buttons appear</div>
+
+<h2>P0 — Do now</h2>
+
+<div class="task task-c" onclick="toggleRow(this)">
+  <div class="checkbox"></div>
+  <div class="task-text">Fix Vyshnavi smallcase + PAN mismatch</div>
+  <div class="priority-row">
+    <button class="p-btn p0 active" onclick="selectP(event, this, 'P0')">P0</button>
+    <button class="p-btn p1" onclick="selectP(event, this, 'P1')">P1</button>
+    <button class="p-btn p2" onclick="selectP(event, this, 'P2')">P2</button>
+    <button class="p-btn p3" onclick="selectP(event, this, 'P3')">P3</button>
+  </div>
+</div>
+
+<div class="task task-c" onclick="toggleRow(this)">
+  <div class="checkbox"></div>
+  <div class="task-text">Zanskar — book tickets</div>
+  <div class="priority-row">
+    <button class="p-btn p0 active" onclick="selectP(event, this, 'P0')">P0</button>
+    <button class="p-btn p1" onclick="selectP(event, this, 'P1')">P1</button>
+    <button class="p-btn p2" onclick="selectP(event, this, 'P2')">P2</button>
+    <button class="p-btn p3" onclick="selectP(event, this, 'P3')">P3</button>
+  </div>
+</div>
+
+<div class="task task-c" onclick="toggleRow(this)">
+  <div class="checkbox"></div>
+  <div class="task-text">Gynecologist appointment</div>
+  <div class="priority-row">
+    <button class="p-btn p0" onclick="selectP(event, this, 'P0')">P0</button>
+    <button class="p-btn p1 active" onclick="selectP(event, this, 'P1')">P1</button>
+    <button class="p-btn p2" onclick="selectP(event, this, 'P2')">P2</button>
+    <button class="p-btn p3" onclick="selectP(event, this, 'P3')">P3</button>
+  </div>
+</div>
+
+<script>
+  function changeBadge(sel) {
+    sel.className = 'badge ' + sel.value;
+  }
+
+  function toggleRow(task) {
+    const row = task.querySelector('.priority-row');
+    row.classList.toggle('visible');
+  }
+
+  function selectP(e, btn, p) {
+    e.stopPropagation();
+    const row = btn.closest('.priority-row');
+    row.querySelectorAll('.p-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    setTimeout(() => row.classList.remove('visible'), 300);
+  }
+</script>
+</body>
+</html>
