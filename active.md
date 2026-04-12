@@ -13,7 +13,7 @@ _Last updated: 2026-04-12_
 - [ ] Call Smallcase support, fix Vyshnavi PAN mismatch - 10 mins
 - [ ] Open Rovia app, complete Vyshnavi signup - 15 mins
 - [ ] Open Amazon, place shopping order (pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush) - 15 mins
-- [ ] Book Fab India visit for wedding shopping - 5 mins
+- [x] Book Fab India visit for wedding shopping - 5 mins
 - [ ] Solve sleep through daily activity
 - [ ] Study Munger mental models (start with 6 core ones)
 - [x] Cricket in the morning - Apr 11
