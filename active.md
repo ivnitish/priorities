@@ -17,6 +17,7 @@ _Last updated: 2026-04-12_
 - [x] Book Fab India visit for wedding shopping - 5 mins
 - [ ] Solve sleep through daily activity
 - [x] Cricket in the morning - Apr 11
+- [ ] Visit nearby crossfit
 
 ## P1 — This week
 - [ ] Call chiropractor, book appointment - 5 mins
