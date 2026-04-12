@@ -17,7 +17,7 @@ _Last updated: 2026-04-12_
 - [ ] Solve sleep through daily activity
 - [ ] Study Munger mental models (start with 6 core ones)
 - [x] Cricket in the morning - Apr 11
-- [ ] Ask doctor which blood tests, book lab online - yourself - 10 mins
+- [ ] Decie on blood tests, book lab online and then Gynacologist - yourself - 10 mins
 
 ## P1 — This week
 - [ ] Call dermatologist, book appointment - 5 mins
