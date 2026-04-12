@@ -19,13 +19,13 @@ _Last updated: 2026-04-12_
 - [x] Cricket in the morning - Apr 11
 
 ## P1 — This week
+- [ ] Call chiropractor, book appointment - 5 mins
 - [ ] Open Lenskart app, order lenses - 10 mins
 - [ ] Call dermatologist, book appointment - 5 mins
 - [ ] Open bank app, list 3 expenses to cut (savings improvement 10-20k) - 20 mins
 - [ ] Watch one Sovrenn video today - 30 mins
 - [ ] Ask Vyshnavi one place she has wanted to go - 2 mins
 - [ ] Call clinic, book dental + ENT together - 5 mins
-- [ ] Call chiropractor, book appointment - 5 mins
 - [ ] Apply for US tourist visa - research requirements first - 30 mins
 - [ ] Study Munger mental models (start with 6 core ones)
 - [ ] Analyse vysh tax returns
