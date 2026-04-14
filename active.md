@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-04-12_
+_Last updated: 2026-04-14_
 
 ## P0 — Do now
 - [ ] Decie on blood tests, book lab online and then Gynacologist - yourself - 10 mins
@@ -19,6 +19,7 @@ _Last updated: 2026-04-12_
 - [x] Cricket in the morning - Apr 11
 - [ ] Visit nearby crossfit
 - [ ] Check about personal trainer in purva
+- [ ] Calculate monthly exp-  Jot daily
 
 ## P1 — This week
 - [ ] Call chiropractor, book appointment - 5 mins
