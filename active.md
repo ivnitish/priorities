@@ -1,9 +1,9 @@
 # My Priority List
-_Last updated: 2026-04-14_
+_Last updated: 2026-04-18_
 
 ## P0 — Do now
 - [ ] Calculate monthly exp-  Jot daily
-- [ ] Decie on blood tests, book lab online and then Gynacologist - yourself - 10 mins
+- [x] Decie on blood tests, book lab online and then Gynacologist - yourself - 10 mins
 - [ ] Call Apollo, book gynecologist - 5 mins
 - [ ] Vyshnavi PF - invest in small case/Ethos Life - 15 mins
 - [x] JBL repair pickup - tomorrow (Apr 12)
