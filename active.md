@@ -20,6 +20,7 @@ _Last updated: 2026-04-18_
 - [x] Cricket in the morning - Apr 11
 - [ ] Visit nearby crossfit
 - [ ] Check about personal trainer in purva
+- [ ] Prinout pics and add on walls as gift to Vysh
 
 ## P1 — This week
 - [ ] Call chiropractor, book appointment - 5 mins
