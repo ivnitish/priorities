@@ -11,7 +11,7 @@ _Last updated: 2026-04-19_
 - [x] Buy Vissu's baby gift - 10 mins
 - [x] Abhishek's daughter birthday gift - by Sunday
 - [x] Kamayakya session - missed
-- [ ] Open MakeMyTrip, book Zanskar tickets - 20 mins
+- [ ] book Zanskar tickets - 20 mins
 - [x] Call Smallcase support, fix Vyshnavi PAN mismatch - 10 mins
 - [ ] Open Rovia app, complete Vyshnavi signup - 15 mins
 - [ ] Open Amazon, place shopping order (pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush) - 15 mins
