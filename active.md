@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-04-19_
+_Last updated: 2026-04-24_
 
 ## P0 — Do now
 - [ ] Calculate monthly exp-  Jot daily
@@ -22,6 +22,7 @@ _Last updated: 2026-04-19_
 - [ ] Check about personal trainer in purva
 - [ ] Prinout pics and add on walls as gift to Vysh
 - [ ] Passport in Ethos shares website
+- [ ] List genclips on flippa or mark platform
 
 ## P1 — This week
 - [ ] Call chiropractor, book appointment - 5 mins
