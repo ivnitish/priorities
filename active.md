@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-04-24_
+_Last updated: 2026-04-25_
 
 ## P0 — Do now
 - [ ] Calculate monthly exp-  Jot daily
@@ -23,10 +23,10 @@ _Last updated: 2026-04-24_
 - [ ] Prinout pics and add on walls as gift to Vysh
 - [ ] Passport in Ethos shares website
 - [ ] List genclips on flippa or mark platform
+- [ ] Open Lenskart app, order lenses - 10 mins
 
 ## P1 — This week
 - [ ] Call chiropractor, book appointment - 5 mins
-- [ ] Open Lenskart app, order lenses - 10 mins
 - [ ] Call dermatologist, book appointment - 5 mins
 - [ ] Open bank app, list 3 expenses to cut (savings improvement 10-20k) - 20 mins
 - [ ] Watch one Sovrenn video today - 30 mins
