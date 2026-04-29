@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-04-27_
+_Last updated: 2026-04-29_
 
 ## P0 — Do now
 - [ ] Do this practice https://x.com/podcastnotes/status/2047282991118860558/video/1?s=46
@@ -25,6 +25,7 @@ _Last updated: 2026-04-27_
 - [ ] Passport in Ethos shares website
 - [ ] List genclips on flippa or mark platform
 - [ ] Open Lenskart app, order lenses - 10 mins
+- [ ] Hyper agents
 
 ## P1 — This week
 - [ ] Call chiropractor, book appointment - 5 mins
