@@ -25,7 +25,7 @@ _Last updated: 2026-04-29_
 - [ ] Passport in Ethos shares website
 - [ ] List genclips on flippa or mark platform
 - [ ] Open Lenskart app, order lenses - 10 mins
-- [ ] Hyper agents
+- [ ] Hyper agents. https://hyperagent.com/threads/new
 
 ## P1 — This week
 - [ ] Call chiropractor, book appointment - 5 mins
