@@ -26,12 +26,12 @@ _Last updated: 2026-05-01_
 - [ ] Prinout pics and add on walls as gift to Vysh
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
+- [ ] Watch one Sovrenn video today - 30 mins
 
 ## P1 — This week
 - [ ] Call chiropractor, book appointment - 5 mins
 - [ ] Call dermatologist, book appointment - 5 mins
 - [ ] Open bank app, list 3 expenses to cut (savings improvement 10-20k) - 20 mins
-- [ ] Watch one Sovrenn video today - 30 mins
 - [ ] Ask Vyshnavi one place she has wanted to go - 2 mins
 - [ ] Call clinic, book dental + ENT together - 5 mins
 - [ ] Apply for US tourist visa - research requirements first - 30 mins
@@ -40,7 +40,7 @@ _Last updated: 2026-05-01_
 - [ ] Stick research ideas - https://x.com/alc2022/status/2042552820952396139?s=46
 - [ ] Send Analytics prep doc to Souji
 - [ ] Souji - Analytics pdf
-- [ ] Apply skin serum while sleeping
+- [x] Apply skin serum while sleeping
 - [ ] Add more curtains in bedroom
 - [ ] Mutton collagen
 
