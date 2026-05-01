@@ -1,7 +1,8 @@
 # My Priority List
-_Last updated: 2026-04-29_
+_Last updated: 2026-05-01_
 
 ## P0 — Do now
+- [ ] Passport in Ethos shares website
 - [ ] Do this practice https://x.com/podcastnotes/status/2047282991118860558/video/1?s=46
 - [ ] Calculate monthly exp-  Jot daily
 - [x] Decie on blood tests, book lab online and then Gynacologist - yourself - 10 mins
@@ -22,7 +23,6 @@ _Last updated: 2026-04-29_
 - [ ] Visit nearby crossfit
 - [ ] Check about personal trainer in purva
 - [ ] Prinout pics and add on walls as gift to Vysh
-- [ ] Passport in Ethos shares website
 - [ ] List genclips on flippa or mark platform
 - [ ] Open Lenskart app, order lenses - 10 mins
 - [ ] Hyper agents. https://hyperagent.com/threads/new
