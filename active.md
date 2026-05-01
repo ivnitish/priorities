@@ -17,7 +17,7 @@ _Last updated: 2026-05-01_
 - [ ] book flights Zanskar tickets - 20 mins
 - [x] Call Smallcase support, fix Vyshnavi PAN mismatch - 10 mins
 - [ ] Open Rovia app, complete Vyshnavi signup - 15 mins
-- [ ] Open Amazon, place shopping order (pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush) - 15 mins
+- [x] Open Amazon, place shopping order (pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush) - 15 mins
 - [x] Book Fab India visit for wedding shopping - 5 mins
 - [ ] Solve sleep through daily activity
 - [x] Cricket in the morning - Apr 11
