@@ -43,6 +43,7 @@ _Last updated: 2026-05-01_
 - [x] Apply skin serum while sleeping
 - [ ] Add more curtains in bedroom
 - [ ] Mutton collagen
+- [ ] Replace Len’s in store and collect order
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
