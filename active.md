@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-05-01_
+_Last updated: 2026-05-02_
 
 ## P0 — Do now
 - [ ] Passport in Ethos shares website
@@ -27,6 +27,7 @@ _Last updated: 2026-05-01_
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
 - [ ] Watch one Sovrenn video today - 30 mins
+- [ ] Omega 3 daily
 
 ## P1 — This week
 - [ ] Call chiropractor, book appointment - 5 mins
