@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Life</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
+      padding-bottom: 40px;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 { font-size: 18px; font-weight: 700; }
+    header span { font-size: 12px; color: #888; }
+
+    .tab-nav {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      position: sticky;
+      top: 53px;
+      z-index: 9;
+    }
+
+    .tab-nav a {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      color: #aaa;
+      border-bottom: 2px solid transparent;
+    }
+
+    .tab-nav a.active {
+      color: #1a1a1a;
+      border-bottom-color: #1a1a1a;
+    }
+
+    .section {
+      margin: 16px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .section-header {
+      padding: 12px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .section-header .add-btn {
+      border: none;
+      background: none;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      color: #bbb;
+      padding: 0 2px;
+    }
+
+    .group-label {
+      padding: 8px 16px 4px;
+      font-size: 11px;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      background: #fafafa;
+      border-bottom: 1px solid #f5f5f5;
+    }
+
+    /* ── Habits ── */
+    .habit-item {
+      display: flex;
+      align-items: center;
+      padding: 13px 16px;
+      border-bottom: 1px solid #f5f5f5;
+      gap: 14px;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .habit-item:last-child { border-bottom: none; }
+
+    .habit-check {
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
+      border: 2px solid #ddd;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .habit-check.done {
+      background: #4caf50;
+      border-color: #4caf50;
+    }
+
+    .habit-check.done::after {
+      content: '✓';
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .habit-info { flex: 1; }
+
+    .habit-name {
+      font-size: 15px;
+      color: #1a1a1a;
+    }
+
+    .habit-meta {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 2px;
+    }
+
+    .habit-streak {
+      font-size: 13px;
+      font-weight: 700;
+      color: #e67e22;
+      min-width: 36px;
+      text-align: right;
+    }
+
+    .habit-streak.zero { color: #ddd; }
+
+    .habit-del {
+      border: none;
+      background: none;
+      color: #e0e0e0;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 0 2px;
+      line-height: 1;
+    }
+
+    /* ── Philosophies ── */
+    .philosophy-item {
+      padding: 13px 16px;
+      border-bottom: 1px solid #f5f5f5;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .philosophy-item:last-child { border-bottom: none; }
+
+    .philosophy-index {
+      font-size: 11px;
+      font-weight: 700;
+      color: #ccc;
+      min-width: 18px;
+      padding-top: 2px;
+      text-align: right;
+    }
+
+    .philosophy-text {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #333;
+      flex: 1;
+      cursor: pointer;
+    }
+
+    .philosophy-del {
+      border: none;
+      background: none;
+      color: #e0e0e0;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 0 2px;
+      line-height: 1;
+    }
+
+    .empty-state {
+      padding: 20px 16px;
+      text-align: center;
+      font-size: 14px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Life</h1>
+  <span id="today-date"></span>
+</header>
+
+<nav class="tab-nav">
+  <a href="index.html">Priorities</a>
+  <a href="life.html" class="active">Life</a>
+</nav>
+
+<div id="content"></div>
+
+<script>
+  // ── Helpers ──
+  const todayStr = () => new Date().toISOString().split('T')[0];
+  const yesterdayStr = () => {
+    const d = new Date(); d.setDate(d.getDate() - 1);
+    return d.toISOString().split('T')[0];
+  };
+  const prevDayStr = (s) => {
+    const d = new Date(s + 'T00:00:00');
+    d.setDate(d.getDate() - 1);
+    return d.toISOString().split('T')[0];
+  };
+  const escHtml = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+  document.getElementById('today-date').textContent =
+    new Date().toLocaleDateString('en-IN', { weekday:'short', day:'numeric', month:'short' });
+
+  // ── Default data ──
+  const DEFAULT_HABITS = [
+    { id: 'journalling',    name: 'Journalling',      group: 'daily' },
+    { id: 'gym',            name: 'Gym / Swimming',   group: 'daily' },
+    { id: 'warm_compress',  name: 'Warm compress',    group: 'eye'   },
+    { id: 'lid_hygiene',    name: 'Lid hygiene',      group: 'eye'   },
+    { id: 'blink_exercises',name: 'Blink exercises',  group: 'eye'   },
+    { id: '20_20_20',       name: '20-20-20 rule',    group: 'eye'   },
+  ];
+
+  const DEFAULT_PHILOSOPHIES = [
+    'Read a lot, think clearly, act rarely.',
+    'Inversion: find what guarantees failure, then stop doing that.',
+    'Only act within your circle of competence. You don\'t need a view on everything.',
+    'Small, consistent actions compound. One good habit daily beats occasional intensity.',
+    'Think past the first consequence — ask: then what?',
+    'Sunk cost is gone. Decide only on what happens from here.',
+    'Understand the incentives — yours and theirs.',
+    'Build margin of safety. Things will go wrong, assume they will.',
+    'Never miss twice. One bad day doesn\'t become a bad week.',
+    'The goal is not to win arguments, but to avoid being wrong.',
+  ];
+
+  // ── Storage ──
+  function loadHabits() {
+    const s = localStorage.getItem('life_habits');
+    if (s) return JSON.parse(s);
+    const h = {};
+    DEFAULT_HABITS.forEach(d => { h[d.id] = { name: d.name, group: d.group, dates: [] }; });
+    return h;
+  }
+
+  function saveHabits(h) { localStorage.setItem('life_habits', JSON.stringify(h)); }
+
+  function loadPhilosophies() {
+    const s = localStorage.getItem('life_philosophies');
+    return s ? JSON.parse(s) : DEFAULT_PHILOSOPHIES;
+  }
+
+  function savePhilosophies(p) { localStorage.setItem('life_philosophies', JSON.stringify(p)); }
+
+  // ── Streak ──
+  function getStreak(dates) {
+    if (!dates || !dates.length) return 0;
+    const unique = [...new Set(dates)].sort().reverse();
+    const t = todayStr(), y = yesterdayStr();
+    if (unique[0] !== t && unique[0] !== y) return 0;
+    let streak = 0, check = unique[0];
+    for (const d of unique) {
+      if (d === check) { streak++; check = prevDayStr(check); }
+      else if (d < check) break;
+    }
+    return streak;
+  }
+
+  function isDoneToday(dates) { return !!(dates && dates.includes(todayStr())); }
+
+  // ── Render ──
+  function render() {
+    const habits = loadHabits();
+    const philosophies = loadPhilosophies();
+
+    // Group habits preserving insertion order
+    const groupOrder = ['daily', 'eye'];
+    const groups = {};
+    groupOrder.forEach(g => groups[g] = []);
+    Object.entries(habits).forEach(([id, h]) => {
+      const g = h.group || 'daily';
+      if (!groups[g]) groups[g] = [];
+      groups[g].push({ id, ...h });
+    });
+
+    const groupLabels = { daily: 'Daily', eye: 'Eye Health' };
+
+    let html = '<div class="section">';
+    html += '<div class="section-header">Habits <button class="add-btn" onclick="addHabit()">+</button></div>';
+
+    let anyHabit = false;
+    for (const g of groupOrder) {
+      const items = groups[g] || [];
+      if (!items.length) continue;
+      anyHabit = true;
+      html += `<div class="group-label">${groupLabels[g] || g}</div>`;
+      items.forEach(h => {
+        const done = isDoneToday(h.dates);
+        const streak = getStreak(h.dates);
+        let meta;
+        if (streak > 1) meta = `${streak}-day streak${streak >= 21 ? ' · locked in' : streak >= 7 ? ' · on fire' : ''}`;
+        else if (done) meta = 'Done today';
+        else if (streak === 1) meta = '1 day — keep it going';
+        else meta = 'Start today';
+        html += `
+          <div class="habit-item">
+            <div class="habit-check ${done ? 'done' : ''}" onclick="toggleHabit('${h.id}')"></div>
+            <div class="habit-info">
+              <div class="habit-name">${escHtml(h.name)}</div>
+              <div class="habit-meta">${escHtml(meta)}</div>
+            </div>
+            <div class="habit-streak ${streak === 0 ? 'zero' : ''}">${streak > 0 ? streak + 'd' : '—'}</div>
+            <button class="habit-del" onclick="deleteHabit('${h.id}');event.stopPropagation()">×</button>
+          </div>`;
+      });
+    }
+    if (!anyHabit) html += '<div class="empty-state">No habits yet — tap + to add</div>';
+    html += '</div>';
+
+    // Philosophies
+    html += '<div class="section">';
+    html += '<div class="section-header">Philosophies <button class="add-btn" onclick="addPhilosophy()">+</button></div>';
+    if (!philosophies.length) {
+      html += '<div class="empty-state">No principles yet — tap + to add</div>';
+    } else {
+      philosophies.forEach((p, i) => {
+        html += `
+          <div class="philosophy-item">
+            <span class="philosophy-index">${i + 1}</span>
+            <div class="philosophy-text" onclick="editPhilosophy(${i})">${escHtml(p)}</div>
+            <button class="philosophy-del" onclick="deletePhilosophy(${i});event.stopPropagation()">×</button>
+          </div>`;
+      });
+    }
+    html += '</div>';
+
+    document.getElementById('content').innerHTML = html;
+  }
+
+  // ── Habit actions ──
+  function toggleHabit(id) {
+    const h = loadHabits();
+    if (!h[id]) return;
+    const t = todayStr();
+    const idx = h[id].dates.indexOf(t);
+    if (idx >= 0) h[id].dates.splice(idx, 1);
+    else h[id].dates.push(t);
+    saveHabits(h);
+    render();
+  }
+
+  function addHabit() {
+    const name = prompt('Habit name:');
+    if (!name || !name.trim()) return;
+    const h = loadHabits();
+    const trimmed = name.trim();
+    const id = trimmed.toLowerCase().replace(/[^a-z0-9]+/g, '_') + '_' + Date.now();
+    const group = confirm('Add to Eye Health group?\n(Cancel for Daily)') ? 'eye' : 'daily';
+    h[id] = { name: trimmed, group, dates: [] };
+    saveHabits(h);
+    render();
+  }
+
+  function deleteHabit(id) {
+    if (!confirm('Remove this habit and its history?')) return;
+    const h = loadHabits();
+    delete h[id];
+    saveHabits(h);
+    render();
+  }
+
+  // ── Philosophy actions ──
+  function addPhilosophy() {
+    const text = prompt('Principle:');
+    if (!text || !text.trim()) return;
+    const ps = loadPhilosophies();
+    ps.push(text.trim());
+    savePhilosophies(ps);
+    render();
+  }
+
+  function editPhilosophy(i) {
+    const ps = loadPhilosophies();
+    const text = prompt('Edit principle:', ps[i]);
+    if (text === null) return;
+    if (!text.trim()) { deletePhilosophy(i); return; }
+    ps[i] = text.trim();
+    savePhilosophies(ps);
+    render();
+  }
+
+  function deletePhilosophy(i) {
+    if (!confirm('Remove this principle?')) return;
+    const ps = loadPhilosophies();
+    ps.splice(i, 1);
+    savePhilosophies(ps);
+    render();
+  }
+
+  render();
+</script>
+
+</body>
+</html>
