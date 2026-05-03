@@ -40,6 +40,7 @@ _Last updated: 2026-05-03_
 - [ ] Add more curtains in bedroom
 - [ ] Mutton collagen
 - [ ] Replace Len’s in store and collect order
+- [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
