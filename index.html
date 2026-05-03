@@ -390,6 +390,11 @@
   </button>
 </header>
 
+<nav style="background:#fff;border-bottom:1px solid #e0e0e0;display:flex;position:sticky;top:53px;z-index:9">
+  <a href="index.html" style="flex:1;text-align:center;padding:10px;text-decoration:none;font-size:13px;font-weight:700;color:#1a1a1a;border-bottom:2px solid #1a1a1a">Priorities</a>
+  <a href="life.html" style="flex:1;text-align:center;padding:10px;text-decoration:none;font-size:13px;font-weight:700;color:#aaa;border-bottom:2px solid transparent">Life</a>
+</nav>
+
 <div id="token-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:100;align-items:center;justify-content:center">
   <div style="background:#fff;border-radius:14px;padding:24px;margin:20px;width:calc(100% - 40px);max-width:400px">
     <h3 style="font-size:15px;margin-bottom:12px">Update GitHub Token</h3>
@@ -624,6 +629,15 @@
 
   let completedDates = JSON.parse(localStorage.getItem('completedDates') || '{}');
 
+  // Rebuild doneTasks for given sections from t.checked after any reorder/splice
+  function syncDoneTasks(sections) {
+    for (const sec of sections) {
+      [...doneTasks].filter(k => k.startsWith(sec + '-')).forEach(k => doneTasks.delete(k));
+      (tasks[sec] || []).forEach((t, i) => { if (t.checked) doneTasks.add(`${sec}-${i}`); });
+    }
+    localStorage.setItem('doneTasks', JSON.stringify([...doneTasks]));
+  }
+
   function toggle(section, index, id) {
     const isDone = doneTasks.has(id);
     if (isDone) {
@@ -798,6 +812,7 @@
         } else {
           tasks[toSection].splice(toIndex, 0, task);
         }
+        syncDoneTasks([fromSection, toSection]);
         render();
         saveToGitHub();
       }
@@ -806,6 +821,7 @@
       if (toSection && toSection !== fromSection) {
         tasks[fromSection].splice(fromIndex, 1);
         tasks[toSection].push(task);
+        syncDoneTasks([fromSection, toSection]);
         render();
         saveToGitHub();
       }
@@ -840,6 +856,7 @@
       if (b.rank) return 1;
       return 0;
     });
+    syncDoneTasks([section]);
     render();
     saveToGitHub();
   }
@@ -853,12 +870,14 @@
     const task = tasks[fromSection][index];
     tasks[fromSection].splice(index, 1);
     tasks[toSection].push(task);
+    syncDoneTasks([fromSection, toSection]);
     render();
     saveToGitHub();
   }
 
   function deleteTask(section, index) {
     tasks[section].splice(index, 1);
+    syncDoneTasks([section]);
     render();
     saveToGitHub();
   }
