@@ -49,9 +49,14 @@
       border-bottom: 2px solid transparent;
     }
 
-    .tab-nav a.active {
-      color: #1a1a1a;
-      border-bottom-color: #1a1a1a;
+    .tab-nav a.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
+
+    #status {
+      font-size: 12px;
+      color: #888;
+      padding: 8px 20px;
+      background: #fff;
+      border-bottom: 1px solid #f0f0f0;
     }
 
     .section {
@@ -95,7 +100,6 @@
       border-bottom: 1px solid #f5f5f5;
     }
 
-    /* ── Habits ── */
     .habit-item {
       display: flex;
       align-items: center;
@@ -120,52 +124,18 @@
       transition: all 0.15s;
     }
 
-    .habit-check.done {
-      background: #4caf50;
-      border-color: #4caf50;
-    }
-
-    .habit-check.done::after {
-      content: '✓';
-      color: white;
-      font-size: 14px;
-      font-weight: 700;
-    }
+    .habit-check.done { background: #4caf50; border-color: #4caf50; }
+    .habit-check.done::after { content: '✓'; color: white; font-size: 14px; font-weight: 700; }
 
     .habit-info { flex: 1; }
+    .habit-name { font-size: 15px; color: #1a1a1a; }
+    .habit-meta { font-size: 12px; color: #aaa; margin-top: 2px; }
 
-    .habit-name {
-      font-size: 15px;
-      color: #1a1a1a;
-    }
-
-    .habit-meta {
-      font-size: 12px;
-      color: #aaa;
-      margin-top: 2px;
-    }
-
-    .habit-streak {
-      font-size: 13px;
-      font-weight: 700;
-      color: #e67e22;
-      min-width: 36px;
-      text-align: right;
-    }
-
+    .habit-streak { font-size: 13px; font-weight: 700; color: #e67e22; min-width: 36px; text-align: right; }
     .habit-streak.zero { color: #ddd; }
 
-    .habit-del {
-      border: none;
-      background: none;
-      color: #e0e0e0;
-      font-size: 20px;
-      cursor: pointer;
-      padding: 0 2px;
-      line-height: 1;
-    }
+    .habit-del { border: none; background: none; color: #e0e0e0; font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
 
-    /* ── Philosophies ── */
     .philosophy-item {
       padding: 13px 16px;
       border-bottom: 1px solid #f5f5f5;
@@ -176,80 +146,71 @@
 
     .philosophy-item:last-child { border-bottom: none; }
 
-    .philosophy-index {
-      font-size: 11px;
-      font-weight: 700;
-      color: #ccc;
-      min-width: 18px;
-      padding-top: 2px;
-      text-align: right;
-    }
+    .philosophy-index { font-size: 11px; font-weight: 700; color: #ccc; min-width: 18px; padding-top: 2px; text-align: right; }
+    .philosophy-text { font-size: 14px; line-height: 1.65; color: #333; flex: 1; cursor: pointer; }
+    .philosophy-del { border: none; background: none; color: #e0e0e0; font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
 
-    .philosophy-text {
-      font-size: 14px;
-      line-height: 1.65;
-      color: #333;
-      flex: 1;
-      cursor: pointer;
-    }
-
-    .philosophy-del {
-      border: none;
-      background: none;
-      color: #e0e0e0;
-      font-size: 20px;
-      cursor: pointer;
-      padding: 0 2px;
-      line-height: 1;
-    }
-
-    .empty-state {
-      padding: 20px 16px;
-      text-align: center;
-      font-size: 14px;
-      color: #bbb;
-    }
+    .empty-state { padding: 20px 16px; text-align: center; font-size: 14px; color: #bbb; }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Life</h1>
-  <span id="today-date"></span>
+  <div style="display:flex;align-items:center;gap:10px">
+    <span id="today-date"></span>
+    <button onclick="openTokenSettings()" style="border:none;background:none;cursor:pointer;padding:4px;color:#bbb">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+  </div>
 </header>
+
+<div id="token-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:100;align-items:center;justify-content:center">
+  <div style="background:#fff;border-radius:14px;padding:24px;margin:20px;width:calc(100% - 40px);max-width:400px">
+    <h3 style="font-size:15px;margin-bottom:12px">GitHub Token</h3>
+    <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxx" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;font-size:14px;margin-bottom:12px">
+    <div style="display:flex;gap:8px">
+      <button onclick="saveToken()" style="flex:1;padding:10px;background:#1a1a1a;color:#fff;border:none;border-radius:8px;font-size:14px;cursor:pointer">Save</button>
+      <button onclick="document.getElementById('token-modal').style.display='none'" style="flex:1;padding:10px;background:#f0f0f0;color:#333;border:none;border-radius:8px;font-size:14px;cursor:pointer">Cancel</button>
+    </div>
+  </div>
+</div>
 
 <nav class="tab-nav">
   <a href="index.html">Priorities</a>
   <a href="life.html" class="active">Life</a>
 </nav>
 
+<div id="status">Loading...</div>
 <div id="content"></div>
 
 <script>
-  // ── Helpers ──
-  const todayStr = () => new Date().toISOString().split('T')[0];
-  const yesterdayStr = () => {
-    const d = new Date(); d.setDate(d.getDate() - 1);
-    return d.toISOString().split('T')[0];
-  };
-  const prevDayStr = (s) => {
-    const d = new Date(s + 'T00:00:00');
-    d.setDate(d.getDate() - 1);
-    return d.toISOString().split('T')[0];
-  };
-  const escHtml = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const OWNER = 'ivnitish';
+  const REPO  = 'priorities';
+  const FILE  = 'life-data.json';
+  const API   = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE}`;
+
+  let fileSha = null;
+
+  const todayStr    = () => new Date().toISOString().split('T')[0];
+  const yesterdayStr = () => { const d = new Date(); d.setDate(d.getDate()-1); return d.toISOString().split('T')[0]; };
+  const prevDayStr  = s  => { const d = new Date(s+'T00:00:00'); d.setDate(d.getDate()-1); return d.toISOString().split('T')[0]; };
+  const escHtml     = s  => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
   document.getElementById('today-date').textContent =
     new Date().toLocaleDateString('en-IN', { weekday:'short', day:'numeric', month:'short' });
 
-  // ── Default data ──
+  // ── Defaults ──
   const DEFAULT_HABITS = [
-    { id: 'journalling',    name: 'Journalling',      group: 'daily' },
-    { id: 'gym',            name: 'Gym / Swimming',   group: 'daily' },
-    { id: 'warm_compress',  name: 'Warm compress',    group: 'eye'   },
-    { id: 'lid_hygiene',    name: 'Lid hygiene',      group: 'eye'   },
-    { id: 'blink_exercises',name: 'Blink exercises',  group: 'eye'   },
-    { id: '20_20_20',       name: '20-20-20 rule',    group: 'eye'   },
+    { id: 'journalling',     name: 'Journalling',      group: 'daily' },
+    { id: 'gym',             name: 'Gym / Swimming',   group: 'daily' },
+    { id: 'sovrenn',         name: 'Sovrenn video',    group: 'daily' },
+    { id: 'omega3',          name: 'Omega 3',          group: 'daily' },
+    { id: 'skin_serum',      name: 'Skin serum',       group: 'daily' },
+    { id: 'warm_compress',   name: 'Warm compress',    group: 'eye'   },
+    { id: 'lid_hygiene',     name: 'Lid hygiene',      group: 'eye'   },
+    { id: 'blink_exercises', name: 'Blink exercises',  group: 'eye'   },
+    { id: '20_20_20',        name: '20-20-20 rule',    group: 'eye'   },
   ];
 
   const DEFAULT_PHILOSOPHIES = [
@@ -265,7 +226,7 @@
     'The goal is not to win arguments, but to avoid being wrong.',
   ];
 
-  // ── Storage ──
+  // ── Local storage ──
   function loadHabits() {
     const s = localStorage.getItem('life_habits');
     if (s) return JSON.parse(s);
@@ -274,14 +235,98 @@
     return h;
   }
 
-  function saveHabits(h) { localStorage.setItem('life_habits', JSON.stringify(h)); }
+  function saveHabitsLocal(h) { localStorage.setItem('life_habits', JSON.stringify(h)); }
 
   function loadPhilosophies() {
     const s = localStorage.getItem('life_philosophies');
-    return s ? JSON.parse(s) : DEFAULT_PHILOSOPHIES;
+    return s ? JSON.parse(s) : [...DEFAULT_PHILOSOPHIES];
   }
 
-  function savePhilosophies(p) { localStorage.setItem('life_philosophies', JSON.stringify(p)); }
+  function savePhilosophiesLocal(p) { localStorage.setItem('life_philosophies', JSON.stringify(p)); }
+
+  function getToken() { return localStorage.getItem('gh_token'); }
+
+  function openTokenSettings() {
+    document.getElementById('token-modal').style.display = 'flex';
+    document.getElementById('token-input').value = '';
+    setTimeout(() => document.getElementById('token-input').focus(), 100);
+  }
+
+  function saveToken() {
+    const t = document.getElementById('token-input').value.trim();
+    if (!t) return;
+    localStorage.setItem('gh_token', t);
+    document.getElementById('token-modal').style.display = 'none';
+    init();
+  }
+
+  // ── GitHub sync ──
+  async function loadFromGitHub() {
+    const token = getToken();
+    if (!token) { setStatus('No token — tap gear to add'); render(); return; }
+
+    setStatus('Syncing...');
+    try {
+      const res = await fetch(API, {
+        headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+      });
+
+      if (res.status === 404) {
+        // First run — push defaults to GitHub
+        setStatus('First sync — creating file...');
+        await pushToGitHub();
+        setStatus('Saved to GitHub');
+        render();
+        return;
+      }
+
+      if (!res.ok) throw new Error(`${res.status}`);
+
+      const data = await res.json();
+      fileSha = data.sha;
+      const parsed = JSON.parse(decodeURIComponent(escape(atob(data.content.replace(/\n/g,'')))));
+
+      // GitHub is authoritative — write to localStorage
+      saveHabitsLocal(parsed.habits || {});
+      savePhilosophiesLocal(parsed.philosophies || []);
+      setStatus('Synced with GitHub');
+    } catch (e) {
+      setStatus('Sync failed — showing local data');
+    }
+    render();
+  }
+
+  async function pushToGitHub() {
+    const token = getToken();
+    if (!token) return;
+
+    const payload = {
+      habits: loadHabits(),
+      philosophies: loadPhilosophies()
+    };
+    const raw = JSON.stringify(payload, null, 2);
+    const encoded = btoa(encodeURIComponent(raw).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode('0x'+p1)));
+
+    const body = { message: `Update life ${todayStr()}`, content: encoded };
+    if (fileSha) body.sha = fileSha;
+
+    try {
+      const res = await fetch(API, {
+        method: 'PUT',
+        headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      if (res.ok) {
+        const d = await res.json();
+        fileSha = d.content.sha;
+        setStatus('Saved to GitHub');
+      }
+    } catch (e) {
+      setStatus('Saved locally (GitHub sync failed)');
+    }
+  }
+
+  function setStatus(msg) { document.getElementById('status').textContent = msg; }
 
   // ── Streak ──
   function getStreak(dates) {
@@ -304,7 +349,6 @@
     const habits = loadHabits();
     const philosophies = loadPhilosophies();
 
-    // Group habits preserving insertion order
     const groupOrder = ['daily', 'eye'];
     const groups = {};
     groupOrder.forEach(g => groups[g] = []);
@@ -329,18 +373,19 @@
         const done = isDoneToday(h.dates);
         const streak = getStreak(h.dates);
         let meta;
-        if (streak > 1) meta = `${streak}-day streak${streak >= 21 ? ' · locked in' : streak >= 7 ? ' · on fire' : ''}`;
-        else if (done) meta = 'Done today';
-        else if (streak === 1) meta = '1 day — keep it going';
-        else meta = 'Start today';
+        if (streak > 1)     meta = `${streak}-day streak${streak >= 21 ? ' · locked in' : streak >= 7 ? ' · on fire' : ''}`;
+        else if (done)      meta = 'Done today';
+        else if (streak===1) meta = '1 day — keep it going';
+        else                meta = 'Start today';
+
         html += `
           <div class="habit-item">
-            <div class="habit-check ${done ? 'done' : ''}" onclick="toggleHabit('${h.id}')"></div>
+            <div class="habit-check ${done?'done':''}" onclick="toggleHabit('${h.id}')"></div>
             <div class="habit-info">
               <div class="habit-name">${escHtml(h.name)}</div>
               <div class="habit-meta">${escHtml(meta)}</div>
             </div>
-            <div class="habit-streak ${streak === 0 ? 'zero' : ''}">${streak > 0 ? streak + 'd' : '—'}</div>
+            <div class="habit-streak ${streak===0?'zero':''}">${streak>0?streak+'d':'—'}</div>
             <button class="habit-del" onclick="deleteHabit('${h.id}');event.stopPropagation()">×</button>
           </div>`;
       });
@@ -348,7 +393,6 @@
     if (!anyHabit) html += '<div class="empty-state">No habits yet — tap + to add</div>';
     html += '</div>';
 
-    // Philosophies
     html += '<div class="section">';
     html += '<div class="section-header">Philosophies <button class="add-btn" onclick="addPhilosophy()">+</button></div>';
     if (!philosophies.length) {
@@ -357,7 +401,7 @@
       philosophies.forEach((p, i) => {
         html += `
           <div class="philosophy-item">
-            <span class="philosophy-index">${i + 1}</span>
+            <span class="philosophy-index">${i+1}</span>
             <div class="philosophy-text" onclick="editPhilosophy(${i})">${escHtml(p)}</div>
             <button class="philosophy-del" onclick="deletePhilosophy(${i});event.stopPropagation()">×</button>
           </div>`;
@@ -376,8 +420,9 @@
     const idx = h[id].dates.indexOf(t);
     if (idx >= 0) h[id].dates.splice(idx, 1);
     else h[id].dates.push(t);
-    saveHabits(h);
+    saveHabitsLocal(h);
     render();
+    pushToGitHub();
   }
 
   function addHabit() {
@@ -385,19 +430,21 @@
     if (!name || !name.trim()) return;
     const h = loadHabits();
     const trimmed = name.trim();
-    const id = trimmed.toLowerCase().replace(/[^a-z0-9]+/g, '_') + '_' + Date.now();
-    const group = confirm('Add to Eye Health group?\n(Cancel for Daily)') ? 'eye' : 'daily';
+    const id = trimmed.toLowerCase().replace(/[^a-z0-9]+/g,'_') + '_' + Date.now();
+    const group = confirm('Add to Eye Health group?\n(Cancel = Daily)') ? 'eye' : 'daily';
     h[id] = { name: trimmed, group, dates: [] };
-    saveHabits(h);
+    saveHabitsLocal(h);
     render();
+    pushToGitHub();
   }
 
   function deleteHabit(id) {
     if (!confirm('Remove this habit and its history?')) return;
     const h = loadHabits();
     delete h[id];
-    saveHabits(h);
+    saveHabitsLocal(h);
     render();
+    pushToGitHub();
   }
 
   // ── Philosophy actions ──
@@ -406,8 +453,9 @@
     if (!text || !text.trim()) return;
     const ps = loadPhilosophies();
     ps.push(text.trim());
-    savePhilosophies(ps);
+    savePhilosophiesLocal(ps);
     render();
+    pushToGitHub();
   }
 
   function editPhilosophy(i) {
@@ -416,19 +464,31 @@
     if (text === null) return;
     if (!text.trim()) { deletePhilosophy(i); return; }
     ps[i] = text.trim();
-    savePhilosophies(ps);
+    savePhilosophiesLocal(ps);
     render();
+    pushToGitHub();
   }
 
   function deletePhilosophy(i) {
     if (!confirm('Remove this principle?')) return;
     const ps = loadPhilosophies();
     ps.splice(i, 1);
-    savePhilosophies(ps);
+    savePhilosophiesLocal(ps);
     render();
+    pushToGitHub();
   }
 
-  render();
+  // ── URL hash token (same pattern as priorities) ──
+  (function() {
+    const hash = location.hash.slice(1);
+    if (hash.startsWith('ghp_') || hash.startsWith('github_pat_')) {
+      localStorage.setItem('gh_token', hash);
+      history.replaceState(null, '', location.pathname + location.search);
+    }
+  })();
+
+  function init() { loadFromGitHub(); }
+  init();
 </script>
 
 </body>
