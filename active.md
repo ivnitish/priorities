@@ -27,6 +27,7 @@ _Last updated: 2026-05-03_
 - [ ] Hyper agents. https://hyperagent.com/threads/new
 
 ## P1 — This week
+- [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
 - [ ] Call chiropractor, book appointment - 5 mins
 - [ ] Call dermatologist, book appointment - 5 mins
 - [ ] Open bank app, list 3 expenses to cut (savings improvement 10-20k) - 20 mins
@@ -40,7 +41,6 @@ _Last updated: 2026-05-03_
 - [ ] Add more curtains in bedroom
 - [ ] Mutton collagen
 - [ ] Replace Len’s in store and collect order
-- [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
