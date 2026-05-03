@@ -20,14 +20,11 @@ _Last updated: 2026-05-03_
 - [ ] Open Rovia app, complete Vyshnavi signup - 15 mins
 - [x] Open Amazon, place shopping order (pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush) - 15 mins
 - [x] Book Fab India visit for wedding shopping - 5 mins
-- [ ] Solve sleep through daily activity
 - [x] Cricket in the morning - Apr 11
 - [ ] Visit nearby crossfit
 - [ ] Check about personal trainer in purva
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
-- [ ] Watch one Sovrenn video today - 30 mins
-- [ ] Omega 3 daily
 
 ## P1 — This week
 - [ ] Call chiropractor, book appointment - 5 mins
@@ -36,12 +33,10 @@ _Last updated: 2026-05-03_
 - [ ] Ask Vyshnavi one place she has wanted to go - 2 mins
 - [ ] Call clinic, book dental + ENT together - 5 mins
 - [ ] Apply for US tourist visa - research requirements first - 30 mins
-- [ ] Study Munger mental models (start with 6 core ones)
 - [ ] Analyse vysh tax returns
 - [ ] Stick research ideas - https://x.com/alc2022/status/2042552820952396139?s=46
 - [ ] Send Analytics prep doc to Souji
 - [ ] Souji - Analytics pdf
-- [x] Apply skin serum while sleeping
 - [ ] Add more curtains in bedroom
 - [ ] Mutton collagen
 - [ ] Replace Len’s in store and collect order
@@ -61,7 +56,6 @@ _Last updated: 2026-05-03_
 ## P3 — Someday
 - [ ] Set up Claude Code automation hooks (weekly nudge, monthly reflection)
 - [ ] Trust for tax saving - research
-- [ ] Huberman routine
 - [ ] Weight tracker
 - [ ] Karaoke - Nannu Dhichukundhuvate
 - [ ] Second brain - https://x.com/defileo/status/2042241063612502162?s=46
