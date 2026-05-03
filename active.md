@@ -1,7 +1,8 @@
 # My Priority List
-_Last updated: 2026-05-02_
+_Last updated: 2026-05-03_
 
 ## P0 — Do now
+- [ ] Prinout pics and add on walls as gift to Vysh
 - [ ] Passport in Ethos shares website
 - [x] Open Lenskart app, order lenses - 10 mins
 - [ ] Call Apollo, book gynecologist - 5 mins
@@ -23,7 +24,6 @@ _Last updated: 2026-05-02_
 - [x] Cricket in the morning - Apr 11
 - [ ] Visit nearby crossfit
 - [ ] Check about personal trainer in purva
-- [ ] Prinout pics and add on walls as gift to Vysh
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
 - [ ] Watch one Sovrenn video today - 30 mins
