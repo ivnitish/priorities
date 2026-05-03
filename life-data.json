@@ -1,0 +1,61 @@
+{
+  "habits": {
+    "journalling": {
+      "name": "Journalling",
+      "group": "daily",
+      "dates": []
+    },
+    "gym": {
+      "name": "Gym / Swimming",
+      "group": "daily",
+      "dates": []
+    },
+    "sovrenn": {
+      "name": "Sovrenn video",
+      "group": "daily",
+      "dates": []
+    },
+    "omega3": {
+      "name": "Omega 3",
+      "group": "daily",
+      "dates": []
+    },
+    "skin_serum": {
+      "name": "Skin serum",
+      "group": "daily",
+      "dates": []
+    },
+    "warm_compress": {
+      "name": "Warm compress",
+      "group": "eye",
+      "dates": []
+    },
+    "lid_hygiene": {
+      "name": "Lid hygiene",
+      "group": "eye",
+      "dates": []
+    },
+    "blink_exercises": {
+      "name": "Blink exercises",
+      "group": "eye",
+      "dates": []
+    },
+    "20_20_20": {
+      "name": "20-20-20 rule",
+      "group": "eye",
+      "dates": []
+    }
+  },
+  "philosophies": [
+    "Read a lot, think clearly, act rarely.",
+    "Inversion: find what guarantees failure, then stop doing that.",
+    "Only act within your circle of competence. You don't need a view on everything.",
+    "Small, consistent actions compound. One good habit daily beats occasional intensity.",
+    "Think past the first consequence — ask: then what?",
+    "Sunk cost is gone. Decide only on what happens from here.",
+    "Understand the incentives — yours and theirs.",
+    "Build margin of safety. Things will go wrong, assume they will.",
+    "Never miss twice. One bad day doesn't become a bad week.",
+    "The goal is not to win arguments, but to avoid being wrong."
+  ]
+}
