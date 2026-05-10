@@ -22,7 +22,7 @@ _Last updated: 2026-05-10_
 - [x] Book Fab India visit for wedding shopping - 5 mins
 - [x] Cricket in the morning - Apr 11
 - [ ] Visit nearby crossfit
-- [ ] Check about personal trainer in purva
+- [ ] Check about personal trainer in purva - 5 mins
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
 - [ ] Shadow speaking
