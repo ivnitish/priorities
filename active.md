@@ -9,7 +9,7 @@ _Last updated: 2026-05-10_
 - [x] Call Apollo, book gynecologist - 5 mins
 - [ ] Vyshnavi PF - invest in small case/Ethos Life - 15 mins
 - [ ] Do this practice https://x.com/podcastnotes/status/2047282991118860558/video/1?s=46
-- [ ] Calculate monthly exp-  Jot daily
+- [ ] Find easy system to calculate monthly expenses
 - [x] Decie on blood tests, book lab online and then Gynacologist - yourself - 10 mins
 - [x] JBL repair pickup - tomorrow (Apr 12)
 - [x] File mom's PRAN report - tomorrow (Apr 12)
