@@ -1,7 +1,8 @@
 # My Priority List
-_Last updated: 2026-05-03_
+_Last updated: 2026-05-10_
 
 ## P0 — Do now
+- [ ] book flights Zanskar tickets - 20 mins
 - [ ] Prinout pics and add on walls as gift to Vysh
 - [ ] Passport in Ethos shares website
 - [x] Open Lenskart app, order lenses - 10 mins
@@ -15,7 +16,6 @@ _Last updated: 2026-05-03_
 - [x] Buy Vissu's baby gift - 10 mins
 - [x] Abhishek's daughter birthday gift - by Sunday
 - [x] Kamayakya session - missed
-- [ ] book flights Zanskar tickets - 20 mins
 - [x] Call Smallcase support, fix Vyshnavi PAN mismatch - 10 mins
 - [ ] Open Rovia app, complete Vyshnavi signup - 15 mins
 - [x] Open Amazon, place shopping order (pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush) - 15 mins
