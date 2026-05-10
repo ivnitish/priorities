@@ -2,8 +2,8 @@
 _Last updated: 2026-05-10_
 
 ## P0 — Do now
-- [ ] Prinout pics and add on walls as gift to Vysh
 - [ ] book flights Zanskar tickets - 20 mins
+- [ ] Prinout pics and add on walls as gift to Vysh
 - [ ] Passport in Ethos shares website
 - [x] Open Lenskart app, order lenses - 10 mins
 - [ ] Call Apollo, book gynecologist - 5 mins
