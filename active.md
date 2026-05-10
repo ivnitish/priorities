@@ -43,6 +43,7 @@ _Last updated: 2026-05-10_
 - [ ] Mutton collagen
 - [ ] Replace Len’s in store and collect order
 - [ ] Kia service centre
+- [ ] Doing things is important than being perfect like journaling and communication
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
