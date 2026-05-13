@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-05-10_
+_Last updated: 2026-05-13_
 
 ## P0 — Do now
 - [ ] book flights Zanskar tickets - 20 mins
@@ -44,6 +44,7 @@ _Last updated: 2026-05-10_
 - [ ] Replace Len’s in store and collect order
 - [ ] Kia service centre
 - [ ] Doing things is important than being perfect like journaling and communication
+- [ ] One dress like Michael Jackson
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
