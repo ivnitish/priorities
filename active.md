@@ -46,6 +46,7 @@ _Last updated: 2026-05-15_
 - [ ] Doing things is important than being perfect like journaling and communication
 - [ ] One dress like Michael Jackson
 - [ ] https://x.com/milesdeutscher/status/2054955529320198279?s=46
+- [ ] https://x.com/anatolikopadze/status/2054568935274549597?s=46
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
