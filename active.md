@@ -25,7 +25,6 @@ _Last updated: 2026-05-17_
 - [ ] Check about personal trainer in purva - 5 mins
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
-- [ ] Shadow speaking
 
 ## P1 — This week
 - [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
