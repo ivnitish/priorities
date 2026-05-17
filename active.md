@@ -34,7 +34,7 @@ _Last updated: 2026-05-17_
 - [ ] Ask Vyshnavi one place she has wanted to go - 2 mins
 - [ ] Call clinic, book dental + ENT together - 5 mins
 - [ ] Apply for US tourist visa - research requirements first - 30 mins
-- [ ] Analyse vysh tax returns
+- [x] Analyse vysh tax returns
 - [ ] Stick research ideas - https://x.com/alc2022/status/2042552820952396139?s=46
 - [ ] Send Analytics prep doc to Souji
 - [ ] Souji - Analytics pdf
