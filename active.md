@@ -36,7 +36,7 @@ _Last updated: 2026-05-17_
 - [ ] Apply for US tourist visa - research requirements first - 30 mins
 - [x] Analyse vysh tax returns
 - [ ] Stick research ideas - https://x.com/alc2022/status/2042552820952396139?s=46
-- [ ] Send Analytics prep doc to Souji
+- [x] Send Analytics prep doc to Souji
 - [ ] Souji - Analytics pdf
 - [ ] Add more curtains in bedroom
 - [ ] Mutton collagen
