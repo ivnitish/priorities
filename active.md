@@ -1,8 +1,8 @@
 # My Priority List
-_Last updated: 2026-05-15_
+_Last updated: 2026-05-17_
 
 ## P0 — Do now
-- [ ] book flights Zanskar tickets - 20 mins
+- [x] book flights Zanskar tickets - 20 mins
 - [ ] Passport in Ethos shares website
 - [ ] Prinout pics and add on walls as gift to Vysh
 - [x] Open Lenskart app, order lenses - 10 mins
