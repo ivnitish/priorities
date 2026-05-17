@@ -25,10 +25,10 @@ _Last updated: 2026-05-17_
 - [ ] Check about personal trainer in purva - 5 mins
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
+- [ ] Call chiropractor, book appointment - 5 mins
 
 ## P1 — This week
 - [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
-- [ ] Call chiropractor, book appointment - 5 mins
 - [ ] Call dermatologist, book appointment - 5 mins
 - [ ] Open bank app, list 3 expenses to cut (savings improvement 10-20k) - 20 mins
 - [ ] Ask Vyshnavi one place she has wanted to go - 2 mins
