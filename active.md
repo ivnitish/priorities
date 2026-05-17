@@ -29,6 +29,7 @@ _Last updated: 2026-05-17_
 - [ ] Mutton collagen
 - [ ] Add more curtains in bedroom
 - [ ] Kia service centre
+- [ ] Doing things is important than being perfect like journaling and communication
 
 ## P1 — This week
 - [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
@@ -42,7 +43,6 @@ _Last updated: 2026-05-17_
 - [x] Send Analytics prep doc to Souji
 - [ ] Souji - Analytics pdf
 - [ ] Replace Len’s in store and collect order
-- [ ] Doing things is important than being perfect like journaling and communication
 - [ ] One dress like Michael Jackson
 - [ ] https://x.com/milesdeutscher/status/2054955529320198279?s=46
 - [ ] https://x.com/anatolikopadze/status/2054568935274549597?s=46
