@@ -26,6 +26,7 @@ _Last updated: 2026-05-17_
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
 - [ ] Call chiropractor, book appointment - 5 mins
+- [ ] Mutton collagen
 
 ## P1 — This week
 - [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
@@ -39,7 +40,6 @@ _Last updated: 2026-05-17_
 - [x] Send Analytics prep doc to Souji
 - [ ] Souji - Analytics pdf
 - [ ] Add more curtains in bedroom
-- [ ] Mutton collagen
 - [ ] Replace Len’s in store and collect order
 - [ ] Kia service centre
 - [ ] Doing things is important than being perfect like journaling and communication
