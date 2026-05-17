@@ -27,6 +27,8 @@ _Last updated: 2026-05-17_
 - [ ] Hyper agents. https://hyperagent.com/threads/new
 - [ ] Call chiropractor, book appointment - 5 mins
 - [ ] Mutton collagen
+- [ ] Add more curtains in bedroom
+- [ ] Kia service centre
 
 ## P1 — This week
 - [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
@@ -39,9 +41,7 @@ _Last updated: 2026-05-17_
 - [ ] Stick research ideas - https://x.com/alc2022/status/2042552820952396139?s=46
 - [x] Send Analytics prep doc to Souji
 - [ ] Souji - Analytics pdf
-- [ ] Add more curtains in bedroom
 - [ ] Replace Len’s in store and collect order
-- [ ] Kia service centre
 - [ ] Doing things is important than being perfect like journaling and communication
 - [ ] One dress like Michael Jackson
 - [ ] https://x.com/milesdeutscher/status/2054955529320198279?s=46
