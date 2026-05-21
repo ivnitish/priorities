@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-05-17_
+_Last updated: 2026-05-21_
 
 ## P0 — Do now
 - [x] book flights Zanskar tickets - 20 mins
@@ -46,6 +46,7 @@ _Last updated: 2026-05-17_
 - [ ] One dress like Michael Jackson
 - [ ] https://x.com/milesdeutscher/status/2054955529320198279?s=46
 - [ ] https://x.com/anatolikopadze/status/2054568935274549597?s=46
+- [ ] Must try claude https://x.com/0xdepressionn/status/2055999112470839383?s=46
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
