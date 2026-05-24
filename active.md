@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-05-23_
+_Last updated: 2026-05-24_
 
 ## P0 — Do now
 - [x] book flights Zanskar tickets - 20 mins
@@ -31,6 +31,7 @@ _Last updated: 2026-05-23_
 - [ ] Kia service centre
 - [ ] Doing things is important than being perfect like journaling and communication
 - [ ] Ai takes https://x.com/itsolelehmann/status/2057909733491937555?s=46
+- [ ] Trip with brother
 
 ## P1 — This week
 - [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
