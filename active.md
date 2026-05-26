@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-05-24_
+_Last updated: 2026-05-26_
 
 ## P0 — Do now
 - [ ] Trip with brother
@@ -50,6 +50,7 @@ _Last updated: 2026-05-24_
 - [ ] https://x.com/milesdeutscher/status/2054955529320198279?s=46
 - [ ] https://x.com/anatolikopadze/status/2054568935274549597?s=46
 - [ ] Must try claude https://x.com/0xdepressionn/status/2055999112470839383?s=46
+- [ ] Weekly rituals https://x.com/riansweetdoris/status/2058591921291809084?s=46
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
