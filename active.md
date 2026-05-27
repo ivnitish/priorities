@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-05-26_
+_Last updated: 2026-05-27_
 
 ## P0 — Do now
 - [ ] Trip with brother
@@ -33,6 +33,7 @@ _Last updated: 2026-05-26_
 - [ ] Doing things is important than being perfect like journaling and communication
 - [ ] Ai takes https://x.com/itsolelehmann/status/2057909733491937555?s=46
 - [ ] Posture correction - https://x.com/upworkout/status/2057830374848213173?s=46
+- [ ] Sperm supplements
 
 ## P1 — This week
 - [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
