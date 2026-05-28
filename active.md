@@ -46,7 +46,7 @@ _Last updated: 2026-05-28_
 - [ ] Stick research ideas - https://x.com/alc2022/status/2042552820952396139?s=46
 - [x] Send Analytics prep doc to Souji
 - [ ] Souji - Analytics pdf
-- [ ] Replace Len’s in store and collect order
+- [x] Replace Len’s in store and collect order
 - [ ] One dress like Michael Jackson
 - [ ] https://x.com/milesdeutscher/status/2054955529320198279?s=46
 - [ ] https://x.com/anatolikopadze/status/2054568935274549597?s=46
