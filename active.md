@@ -26,7 +26,7 @@ _Last updated: 2026-05-28_
 - [ ] Check about personal trainer in purva - 5 mins
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
-- [ ] Call chiropractor, book appointment - 5 mins
+- [x] Call chiropractor, book appointment - 5 mins
 - [ ] Mutton collagen
 - [ ] Add more curtains in bedroom
 - [ ] Kia service centre
