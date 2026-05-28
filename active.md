@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-05-27_
+_Last updated: 2026-05-28_
 
 ## P0 — Do now
 - [ ] Trip with brother
@@ -8,7 +8,7 @@ _Last updated: 2026-05-27_
 - [ ] Prinout pics and add on walls as gift to Vysh
 - [x] Open Lenskart app, order lenses - 10 mins
 - [x] Call Apollo, book gynecologist - 5 mins
-- [ ] Vyshnavi PF - invest in small case/- 15 mins
+- [x] Vyshnavi PF - invest in small case/- 15 mins
 - [ ] Do this practice https://x.com/podcastnotes/status/2047282991118860558/video/1?s=46
 - [ ] Find easy system to calculate monthly expenses
 - [x] Decie on blood tests, book lab online and then Gynacologist - yourself - 10 mins
