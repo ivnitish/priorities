@@ -1,8 +1,8 @@
 # My Priority List
-_Last updated: 2026-05-28_
+_Last updated: 2026-05-30_
 
 ## P0 — Do now
-- [ ] Sperm supplements
+- [ ] Sp supplements
 - [ ] Trip with brother
 - [x] book flights Zanskar tickets - 20 mins
 - [ ] Passport in Ethos shares website
