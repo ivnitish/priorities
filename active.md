@@ -36,6 +36,7 @@ _Last updated: 2026-05-31_
 - [ ] Posture correction - https://x.com/upworkout/status/2057830374848213173?s=46
 
 ## P1 — This week
+- [ ] near bangalore/wayan https://www.instagram.com/reel/DY9cLDlSk7F/?igsh=MWxsNHgyd2FneDN4aA==
 - [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
 - [ ] Call dermatologist, book appointment - 5 mins
 - [ ] Open bank app, list 3 expenses to cut (savings improvement 10-20k) - 20 mins
@@ -52,7 +53,6 @@ _Last updated: 2026-05-31_
 - [ ] https://x.com/anatolikopadze/status/2054568935274549597?s=46
 - [ ] Must try claude https://x.com/0xdepressionn/status/2055999112470839383?s=46
 - [ ] Weekly rituals https://x.com/riansweetdoris/status/2058591921291809084?s=46
-- [ ] near bangalore/wayan https://www.instagram.com/reel/DY9cLDlSk7F/?igsh=MWxsNHgyd2FneDN4aA==
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
