@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-06-05_
+_Last updated: 2026-06-10_
 
 ## P0 — Do now
 - [ ] Sp supplements
@@ -54,6 +54,7 @@ _Last updated: 2026-06-05_
 - [ ] https://x.com/anatolikopadze/status/2054568935274549597?s=46
 - [ ] Must try claude https://x.com/0xdepressionn/status/2055999112470839383?s=46
 - [ ] Weekly rituals https://x.com/riansweetdoris/status/2058591921291809084?s=46
+- [ ] Bangalore nearby Travel https://blrhikes.com/trails
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
