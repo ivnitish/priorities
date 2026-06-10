@@ -55,6 +55,7 @@ _Last updated: 2026-06-10_
 - [ ] Must try claude https://x.com/0xdepressionn/status/2055999112470839383?s=46
 - [ ] Weekly rituals https://x.com/riansweetdoris/status/2058591921291809084?s=46
 - [ ] Bangalore nearby Travel https://blrhikes.com/trails
+- [ ] Teach skill https://x.com/mattpocockuk/status/2064023483781193905?s=46
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
