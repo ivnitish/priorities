@@ -57,6 +57,7 @@ _Last updated: 2026-06-22_
 - [ ] Bangalore nearby Travel https://blrhikes.com/trails
 - [ ] Teach skill https://x.com/mattpocockuk/status/2064023483781193905?s=46
 - [ ] T shirts https://subtlestore.com/products/the-cloud-tee
+- [ ] Note https://www.instagram.com/reel/DYKqdCqpcDs/?igsh=MWRmNWJxNzF0ajYzbw==
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
