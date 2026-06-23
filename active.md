@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-06-22_
+_Last updated: 2026-06-23_
 
 ## P0 — Do now
 - [ ] Sp supplements
@@ -35,6 +35,7 @@ _Last updated: 2026-06-22_
 - [ ] Ai takes https://x.com/itsolelehmann/status/2057909733491937555?s=46
 - [ ] Posture correction - https://x.com/upworkout/status/2057830374848213173?s=46
 - [ ] https://x.com/shl/status/2036162956761715096?s=46 idea repo
+- [ ] Adhd video https://www.instagram.com/reel/DZ5FbdPKYEN/?igsh=bGU1d2dmYTAwdXNs
 
 ## P1 — This week
 - [ ] near bangalore/wayan https://www.instagram.com/reel/DY9cLDlSk7F/?igsh=MWxsNHgyd2FneDN4aA==
