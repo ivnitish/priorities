@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-07-18_
+_Last updated: 2026-07-22_
 
 ## P0 — Do now
 - [ ] Sp supplements
@@ -38,6 +38,7 @@ _Last updated: 2026-07-18_
 - [ ] Adhd video https://www.instagram.com/reel/DZ5FbdPKYEN/?igsh=bGU1d2dmYTAwdXNs
 - [ ] Dmt https://www.instagram.com/reel/DWzJG5akV8k/?igsh=bm1vOHczOXZ3OHJh
 - [ ] https://github.com/Forward-Future/loopy
+- [ ] Must do https://x.com/petergyang/status/2079943830024188105?s=46
 
 ## P1 — This week
 - [ ] near bangalore/wayan https://www.instagram.com/reel/DY9cLDlSk7F/?igsh=MWxsNHgyd2FneDN4aA==
