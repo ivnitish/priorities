@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-07-22_
+_Last updated: 2026-07-24_
 
 ## P0 — Do now
 - [ ] Sp supplements
@@ -56,7 +56,7 @@ _Last updated: 2026-07-22_
 - [ ] One dress like Michael Jackson
 - [ ] https://x.com/milesdeutscher/status/2054955529320198279?s=46
 - [ ] https://x.com/anatolikopadze/status/2054568935274549597?s=46
-- [ ] Must try claude https://x.com/0xdepressionn/status/2055999112470839383?s=46
+- [ ] Must try - Karpathy claude https://x.com/0xdepressionn/status/2055999112470839383?s=46
 - [ ] Weekly rituals https://x.com/riansweetdoris/status/2058591921291809084?s=46
 - [ ] Bangalore nearby Travel https://blrhikes.com/trails
 - [ ] Teach skill https://x.com/mattpocockuk/status/2064023483781193905?s=46
