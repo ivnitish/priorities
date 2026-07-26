@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-07-24_
+_Last updated: 2026-07-26_
 
 ## P0 — Do now
 - [ ] Sp supplements
@@ -62,6 +62,7 @@ _Last updated: 2026-07-24_
 - [ ] Teach skill https://x.com/mattpocockuk/status/2064023483781193905?s=46
 - [ ] T shirts https://subtlestore.com/products/the-cloud-tee
 - [ ] Note https://www.instagram.com/reel/DYKqdCqpcDs/?igsh=MWRmNWJxNzF0ajYzbw==
+- [ ] Books - https://x.com/saylor/status/2081015697157529817?s=46
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
