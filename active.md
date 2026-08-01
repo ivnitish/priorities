@@ -53,7 +53,7 @@ _Last updated: 2026-08-01_
 - [x] Send Analytics prep doc to Souji
 - [ ] Souji - Analytics pdf
 - [x] Replace Len’s in store and collect order
-- [ ] One dress like Michael Jackson
+- [x] One dress like Michael Jackson
 - [ ] https://x.com/milesdeutscher/status/2054955529320198279?s=46
 - [ ] https://x.com/anatolikopadze/status/2054568935274549597?s=46
 - [ ] Must try - Karpathy claude https://x.com/0xdepressionn/status/2055999112470839383?s=46
