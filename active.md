@@ -29,7 +29,7 @@ _Last updated: 2026-08-01_
 - [ ] Hyper agents. https://hyperagent.com/threads/new
 - [x] Call chiropractor, book appointment - 5 mins
 - [x] Mutton collagen
-- [ ] Add more curtains in bedroom
+- [x] Add more curtains in bedroom
 - [ ] Kia service centre
 - [ ] Doing things is important than being perfect like journaling and communication
 - [ ] Ai takes https://x.com/itsolelehmann/status/2057909733491937555?s=46
