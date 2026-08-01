@@ -30,8 +30,8 @@ _Last updated: 2026-08-01_
 - [x] Call chiropractor, book appointment - 5 mins
 - [x] Mutton collagen
 - [x] Add more curtains in bedroom
-- [ ] Kia service centre
-- [ ] Doing things is important than being perfect like journaling and communication
+- [x] Kia service centre
+- [x] Doing things is important than being perfect like journaling and communication
 - [ ] Ai takes https://x.com/itsolelehmann/status/2057909733491937555?s=46
 - [ ] Posture correction - https://x.com/upworkout/status/2057830374848213173?s=46
 - [ ] https://x.com/shl/status/2036162956761715096?s=46 idea repo
