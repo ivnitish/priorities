@@ -23,7 +23,7 @@ _Last updated: 2026-08-01_
 - [x] Open Amazon, place shopping order (pressure cooker, dog leash, swim shorts, cricket T-shirt, electric brush) - 15 mins
 - [x] Book Fab India visit for wedding shopping - 5 mins
 - [x] Cricket in the morning - Apr 11
-- [ ] Visit nearby crossfit
+- [x] Visit nearby crossfit
 - [ ] Check about personal trainer in purva - 5 mins
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
@@ -54,7 +54,7 @@ _Last updated: 2026-08-01_
 - [ ] Souji - Analytics pdf
 - [x] Replace Len’s in store and collect order
 - [ ] One dress like Michael Jackson
-- [x] https://x.com/milesdeutscher/status/2054955529320198279?s=46
+- [ ] https://x.com/milesdeutscher/status/2054955529320198279?s=46
 - [ ] https://x.com/anatolikopadze/status/2054568935274549597?s=46
 - [ ] Must try - Karpathy claude https://x.com/0xdepressionn/status/2055999112470839383?s=46
 - [ ] Weekly rituals https://x.com/riansweetdoris/status/2058591921291809084?s=46
