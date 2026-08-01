@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-07-26_
+_Last updated: 2026-08-01_
 
 ## P0 — Do now
 - [ ] Sp supplements
@@ -28,7 +28,7 @@ _Last updated: 2026-07-26_
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
 - [x] Call chiropractor, book appointment - 5 mins
-- [ ] Mutton collagen
+- [x] Mutton collagen
 - [ ] Add more curtains in bedroom
 - [ ] Kia service centre
 - [ ] Doing things is important than being perfect like journaling and communication
