@@ -24,7 +24,7 @@ _Last updated: 2026-08-01_
 - [x] Book Fab India visit for wedding shopping - 5 mins
 - [x] Cricket in the morning - Apr 11
 - [x] Visit nearby crossfit
-- [ ] Check about personal trainer in purva - 5 mins
+- [x] Check about personal trainer in purva - 5 mins
 - [ ] List genclips on flippa or mark platform
 - [ ] Hyper agents. https://hyperagent.com/threads/new
 - [x] Call chiropractor, book appointment - 5 mins
@@ -39,14 +39,14 @@ _Last updated: 2026-08-01_
 - [ ] Dmt https://www.instagram.com/reel/DWzJG5akV8k/?igsh=bm1vOHczOXZ3OHJh
 - [ ] https://github.com/Forward-Future/loopy
 - [ ] Must do https://x.com/petergyang/status/2079943830024188105?s=46
+- [ ] Call dermatologist, book appointment - 5 mins
+- [ ] Call clinic, book dental + ENT together - 5 mins
 
 ## P1 — This week
 - [ ] near bangalore/wayan https://www.instagram.com/reel/DY9cLDlSk7F/?igsh=MWxsNHgyd2FneDN4aA==
 - [ ] Love it https://www.instagram.com/reel/DXrw0UFD6Cp/?igsh=MXR0aDhuczZkZnIxcw==
-- [ ] Call dermatologist, book appointment - 5 mins
 - [ ] Open bank app, list 3 expenses to cut (savings improvement 10-20k) - 20 mins
 - [ ] Ask Vyshnavi one place she has wanted to go - 2 mins
-- [ ] Call clinic, book dental + ENT together - 5 mins
 - [ ] Apply for US tourist visa - research requirements first - 30 mins
 - [x] Analyse vysh tax returns
 - [ ] Stick research ideas - https://x.com/alc2022/status/2042552820952396139?s=46
