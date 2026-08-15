@@ -65,6 +65,7 @@ _Last updated: 2026-08-15_
 - [ ] Books - https://x.com/saylor/status/2081015697157529817?s=46
 - [ ] https://x.com/av1dlive/status/2082808106384576786?s=46
 - [ ] https://x.com/thedankoe/status/2010751592346030461?s=46My
+- [ ] https://x.com/thedankoe/status/2010751592346030461?s=46
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
