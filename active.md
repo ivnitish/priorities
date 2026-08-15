@@ -51,7 +51,7 @@ _Last updated: 2026-08-15_
 - [x] Analyse vysh tax returns
 - [ ] Stick research ideas - https://x.com/alc2022/status/2042552820952396139?s=46
 - [x] Send Analytics prep doc to Souji
-- [ ] Souji - Analytics pdf
+- [x] Souji - Analytics pdf
 - [x] Replace Len’s in store and collect order
 - [x] One dress like Michael Jackson
 - [ ] https://x.com/milesdeutscher/status/2054955529320198279?s=46
