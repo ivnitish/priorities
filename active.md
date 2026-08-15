@@ -84,5 +84,5 @@ _Last updated: 2026-08-15_
 - [ ] Trust for tax saving - research
 - [ ] Weight tracker
 - [ ] Karaoke - Nannu Dhichukundhuvate
-- [ ] Second brain - https://x.com/defileo/status/2042241063612502162?s=46
+- [x] Second brain - https://x.com/defileo/status/2042241063612502162?s=46
 
