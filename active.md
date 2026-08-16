@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-08-15_
+_Last updated: 2026-08-16_
 
 ## P0 — Do now
 - [ ] Sp supplements
@@ -41,6 +41,7 @@ _Last updated: 2026-08-15_
 - [ ] Must do https://x.com/petergyang/status/2079943830024188105?s=46
 - [ ] Call dermatologist, book appointment - 5 mins
 - [ ] Call clinic, book dental + ENT together - 5 mins
+- [ ] https://x.com/0xhvdes/status/2088562056580464764?s=46
 
 ## P1 — This week
 - [ ] near bangalore/wayan https://www.instagram.com/reel/DY9cLDlSk7F/?igsh=MWxsNHgyd2FneDN4aA==
