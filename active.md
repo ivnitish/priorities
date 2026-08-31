@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-08-16_
+_Last updated: 2026-08-31_
 
 ## P0 — Do now
 - [ ] Sp supplements
@@ -67,6 +67,7 @@ _Last updated: 2026-08-16_
 - [ ] https://x.com/av1dlive/status/2082808106384576786?s=46
 - [x] https://x.com/thedankoe/status/2010751592346030461?s=46My
 - [ ] https://x.com/thedankoe/status/2010751592346030461?s=46
+- [ ] Learn https://x.com/0xhvdes/status/2094075106096009695?s=46
 
 ## P2 — Soon
 - [ ] EPF / cost-free loan research
