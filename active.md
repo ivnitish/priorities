@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-08-31_
+_Last updated: 2026-09-14_
 
 ## P0 — Do now
 - [ ] Sp supplements
@@ -73,7 +73,7 @@ _Last updated: 2026-08-31_
 - [ ] EPF / cost-free loan research
 - [ ] Book parents full body checkup online - 10 mins
 - [ ] Change bedsheet
-- [ ] Call sofa repair service - 5 mins
+- [x] Call sofa repair service - 5 mins
 - [ ] Buy dishwasher plug on Amazon - 5 mins
 - [ ] Fix IKEA light glass
 - [ ] Take mom's phone to service center - 30 mins
