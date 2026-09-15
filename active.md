@@ -1,5 +1,5 @@
 # My Priority List
-_Last updated: 2026-09-14_
+_Last updated: 2026-09-15_
 
 ## P0 — Do now
 - [ ] Sp supplements
@@ -39,7 +39,7 @@ _Last updated: 2026-09-14_
 - [ ] Dmt https://www.instagram.com/reel/DWzJG5akV8k/?igsh=bm1vOHczOXZ3OHJh
 - [ ] https://github.com/Forward-Future/loopy
 - [ ] Must do https://x.com/petergyang/status/2079943830024188105?s=46
-- [ ] Call dermatologist, book appointment - 5 mins
+- [x] Call dermatologist, book appointment - 5 mins
 - [ ] Call clinic, book dental + ENT together - 5 mins
 - [ ] https://x.com/0xhvdes/status/2088562056580464764?s=46
 
