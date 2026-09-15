@@ -42,6 +42,7 @@ _Last updated: 2026-09-15_
 - [x] Call dermatologist, book appointment - 5 mins
 - [ ] Call clinic, book dental + ENT together - 5 mins
 - [ ] Call Swetha clinic, book GFC session 2 for before the knee surgery - 5 mins
+- [ ] Get orthopaedic second opinion on knee, then freeze surgery dates - between 5 and 11 Oct, back from Thailand 4 Oct
 - [ ] https://x.com/0xhvdes/status/2088562056580464764?s=46
 
 ## P1 — This week
