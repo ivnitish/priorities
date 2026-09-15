@@ -41,6 +41,7 @@ _Last updated: 2026-09-15_
 - [ ] Must do https://x.com/petergyang/status/2079943830024188105?s=46
 - [x] Call dermatologist, book appointment - 5 mins
 - [ ] Call clinic, book dental + ENT together - 5 mins
+- [ ] Call Swetha clinic, book GFC session 2 for before the knee surgery - 5 mins
 - [ ] https://x.com/0xhvdes/status/2088562056580464764?s=46
 
 ## P1 — This week
